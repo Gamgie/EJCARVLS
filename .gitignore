@@ -8,3 +8,13 @@ After Effect/EJCARVLS.aep Logs/
 Touchdesigner/Backup/
 Touchdesigner/DepthToPointCloud.*.toe
 Videos/
+
+
+EJCARVLS-Unity/ProjectSettings/Packages/
+    
+EJCARVLS-Unity/Packages/*/
+Touchdesigner/SlimeControl_autosave/
+
+*.dmp
+
+Touchdesigner/Slime.*.toe
