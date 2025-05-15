@@ -216,7 +216,7 @@
               "controlAddress": "/serverName"
             },
             {
-              "value": true,
+              "value": false,
               "controlAddress": "/isConnected"
             }
           ],
@@ -274,7 +274,7 @@
                       "controlAddress": "/Nbagentsroot"
                     },
                     {
-                      "value": 1.435249090194702,
+                      "value": 0.5320232510566711,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentssizepx/agentssizepx",
@@ -283,7 +283,7 @@
                       "controlAddress": "/Agentssizepx"
                     },
                     {
-                      "value": 0.1164398938417435,
+                      "value": 0.1399002969264984,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsopacity/agentsopacity",
@@ -310,7 +310,7 @@
                       "controlAddress": "/Main"
                     },
                     {
-                      "value": 0.8338422775268555,
+                      "value": 0.7165401577949524,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/stepsize/stepsize",
@@ -346,7 +346,7 @@
                       "controlAddress": "/Sensorsoffset"
                     },
                     {
-                      "value": 0.182178869843483,
+                      "value": 0.3170762360095978,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsizemult/agentsizemult",
@@ -355,7 +355,7 @@
                       "controlAddress": "/Agentsizemult"
                     },
                     {
-                      "value": 1.0,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/altinfluence1/altinfluence1",
@@ -373,7 +373,7 @@
                       "controlAddress": "/Alttrailinfluence1"
                     },
                     {
-                      "value": 2.785923719406128,
+                      "value": 0.6744868159294128,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/stepsize1/stepsize1",
@@ -382,7 +382,7 @@
                       "controlAddress": "/Stepsize1"
                     },
                     {
-                      "value": 0.222170352935791,
+                      "value": 0.4799999892711639,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sasensorsangle1/sasensorsangle1",
@@ -391,7 +391,7 @@
                       "controlAddress": "/Sasensorsangle1"
                     },
                     {
-                      "value": 0.2207919210195541,
+                      "value": 0.2300000041723251,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/rarotateangle1/rarotateangle1",
@@ -400,7 +400,7 @@
                       "controlAddress": "/Rarotateangle1"
                     },
                     {
-                      "value": 27.04691314697266,
+                      "value": 3.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sensorsoffset1/sensorsoffset1",
@@ -409,7 +409,7 @@
                       "controlAddress": "/Sensorsoffset1"
                     },
                     {
-                      "value": 0.3316949605941772,
+                      "value": 0.1879999935626984,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsizemult1/agentsizemult1",
@@ -438,7 +438,7 @@
                 "Switch": {
                   "parameters": [
                     {
-                      "value": 4.0,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/index/index",
@@ -456,7 +456,7 @@
                       "controlAddress": "/Sourcemult"
                     },
                     {
-                      "value": 0.7947213649749756,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/influencnoisewhite/influencnoisewhite",
@@ -1325,7 +1325,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.8338422775268555,
+                  "value": 0.7165401577949524,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 2.740000009536743,
@@ -1409,7 +1409,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.182178869843483,
+                  "value": 0.3170762360095978,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.1030000001192093,
@@ -1430,7 +1430,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.8659999966621399,
@@ -1472,7 +1472,7 @@
             {
               "parameters": [
                 {
-                  "value": 2.785923719406128,
+                  "value": 0.6744868159294128,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 5.710000038146973,
@@ -1493,7 +1493,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.222170352935791,
+                  "value": 0.4799999892711639,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 0.4799999892711639,
@@ -1514,7 +1514,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.2207919210195541,
+                  "value": 0.2300000041723251,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 0.2300000041723251,
@@ -1535,7 +1535,7 @@
             {
               "parameters": [
                 {
-                  "value": 27.04691314697266,
+                  "value": 3.0,
                   "minValue": 0.0,
                   "maxValue": 100.0,
                   "default": 3.0,
@@ -1556,7 +1556,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.3316949605941772,
+                  "value": 0.1879999935626984,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.1879999935626984,
@@ -1577,7 +1577,7 @@
             {
               "parameters": [
                 {
-                  "value": 4.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 0.0,
@@ -1619,7 +1619,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.435249090194702,
+                  "value": 0.5320232510566711,
                   "minValue": 0.0,
                   "maxValue": 4.0,
                   "default": 0.4381817877292633,
@@ -1640,7 +1640,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.1164398938417435,
+                  "value": 0.1399002969264984,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.08418181538581848,
@@ -1661,7 +1661,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.7947213649749756,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.0,
