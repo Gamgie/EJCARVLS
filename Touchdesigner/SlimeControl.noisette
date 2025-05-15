@@ -1,0 +1,4728 @@
+{
+  "metaData": {
+    "version": "1.9.25b13",
+    "versionNumber": 67865
+  },
+  "projectSettings": {
+    "parameters": [
+      {
+        "value": true,
+        "controlAddress": "/saveLayoutInFile"
+      }
+    ],
+    "containers": {
+      "dashboardSettings": {
+        "parameters": [
+          {
+            "value": "",
+            "controlAddress": "/showDashboardOnStartup",
+            "enabled": false
+          },
+          {
+            "value": true,
+            "controlAddress": "/enableDashboardServer"
+          },
+          {
+            "value": 2222,
+            "hexMode": false,
+            "controlAddress": "/serverPort"
+          }
+        ]
+      },
+      "customDefinitions": {
+      }
+    }
+  },
+  "dashboardManager": {
+    "parameters": [
+      {
+        "value": false,
+        "controlAddress": "/editMode"
+      },
+      {
+        "value": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "controlAddress": "/tabsBGColor"
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "parrots": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "layout": {
+    "mainLayout": {
+      "type": 1,
+      "width": 1922,
+      "height": 1039,
+      "direction": 2,
+      "shifters": [
+        {
+          "type": 1,
+          "width": 1922,
+          "height": 1039,
+          "direction": 2,
+          "shifters": [
+            {
+              "type": 1,
+              "width": 1922,
+              "height": 698,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 1,
+                  "width": 316,
+                  "height": 698,
+                  "direction": 2,
+                  "shifters": [
+                    {
+                      "type": 0,
+                      "width": 316,
+                      "height": 381,
+                      "currentContent": "Modules",
+                      "tabs": [
+                        {
+                          "name": "Modules"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 0,
+                      "width": 316,
+                      "height": 311,
+                      "currentContent": "Custom Variables",
+                      "tabs": [
+                        {
+                          "name": "Custom Variables"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 999,
+                  "height": 698,
+                  "currentContent": "Dashboard",
+                  "tabs": [
+                    {
+                      "name": "State Machine"
+                    },
+                    {
+                      "name": "Dashboard"
+                    },
+                    {
+                      "name": "Module Router"
+                    },
+                    {
+                      "name": "Morpher"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 595,
+                  "height": 698,
+                  "currentContent": "Inspector",
+                  "tabs": [
+                    {
+                      "name": "Inspector"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 1,
+              "width": 1922,
+              "height": 334,
+              "direction": 1,
+              "shifters": [
+                {
+                  "type": 0,
+                  "width": 178,
+                  "height": 334,
+                  "currentContent": "Sequences",
+                  "tabs": [
+                    {
+                      "name": "Sequences"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 1258,
+                  "height": 334,
+                  "currentContent": "Sequence Editor",
+                  "tabs": [
+                    {
+                      "name": "Sequence Editor"
+                    }
+                  ]
+                },
+                {
+                  "type": 0,
+                  "width": 474,
+                  "height": 334,
+                  "currentContent": "Logger",
+                  "tabs": [
+                    {
+                      "name": "Help"
+                    },
+                    {
+                      "name": "Logger"
+                    },
+                    {
+                      "name": "Warnings"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "windows": null
+  },
+  "modules": {
+    "items": [
+      {
+        "niceName": "TD",
+        "type": "OSCQuery",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": "TD OSC Query Server",
+              "controlAddress": "/serverName"
+            },
+            {
+              "value": false,
+              "controlAddress": "/isConnected"
+            }
+          ],
+          "containers": {
+            "output": {
+              "parameters": [
+                {
+                  "value": "127.0.0.1",
+                  "controlAddress": "/remoteHost"
+                },
+                {
+                  "value": 9010,
+                  "hexMode": false,
+                  "controlAddress": "/remotePort"
+                },
+                {
+                  "value": 9010,
+                  "hexMode": false,
+                  "controlAddress": "/customOSCPort",
+                  "enabled": false
+                },
+                {
+                  "value": 9010,
+                  "hexMode": false,
+                  "controlAddress": "/customWebsocketPort",
+                  "enabled": false
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "Slime": {
+              "containers": {
+                "Slime": {
+                  "parameters": [
+                    {
+                      "value": [
+                        6000.0,
+                        1200.0
+                      ],
+                      "controlAddress": "/Resolution"
+                    },
+                    {
+                      "value": 2000,
+                      "hexMode": false,
+                      "controlAddress": "/Nbagentsroot"
+                    },
+                    {
+                      "value": 0.5320232510566711,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/agentssizepx/agentssizepx",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Agentssizepx"
+                    },
+                    {
+                      "value": 0.1399002969264984,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/agentsopacity/agentsopacity",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Agentsopacity"
+                    },
+                    {
+                      "value": 1.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/trailmapinfluence/trailmapinfluence",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Trailmapinfluence"
+                    },
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/main/main",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Main"
+                    },
+                    {
+                      "value": 0.7165401577949524,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/stepsize/stepsize",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Stepsize"
+                    },
+                    {
+                      "value": 3.046393394470215,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/sasensorsangle/sasensorsangle",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Sasensorsangle"
+                    },
+                    {
+                      "value": 0.2360297441482544,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/rarotateangle/rarotateangle",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Rarotateangle"
+                    },
+                    {
+                      "value": 10.98709106445312,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/sensorsoffset/sensorsoffset",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Sensorsoffset"
+                    },
+                    {
+                      "value": 0.3170762360095978,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/agentsizemult/agentsizemult",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Agentsizemult"
+                    },
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/altinfluence1/altinfluence1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Altinfluence1"
+                    },
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/alttrailinfluence1/alttrailinfluence1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Alttrailinfluence1"
+                    },
+                    {
+                      "value": 0.6744868159294128,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/stepsize1/stepsize1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Stepsize1"
+                    },
+                    {
+                      "value": 0.4799999892711639,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/sasensorsangle1/sasensorsangle1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Sasensorsangle1"
+                    },
+                    {
+                      "value": 0.2300000041723251,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/rarotateangle1/rarotateangle1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Rarotateangle1"
+                    },
+                    {
+                      "value": 3.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/sensorsoffset1/sensorsoffset1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Sensorsoffset1"
+                    },
+                    {
+                      "value": 0.1879999935626984,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/agentsizemult1/agentsizemult1",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Agentsizemult1"
+                    },
+                    {
+                      "value": 1.57,
+                      "controlAddress": "/Sasensorsangle2"
+                    },
+                    {
+                      "value": 2.78,
+                      "controlAddress": "/Saturationmult2"
+                    }
+                  ],
+                  "owned": true,
+                  "niceName": "Slime"
+                }
+              },
+              "owned": true,
+              "niceName": "Slime"
+            },
+            "main": {
+              "containers": {
+                "Switch": {
+                  "parameters": [
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/index/index",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Index"
+                    },
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/sourcemult/sourcemult",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Sourcemult"
+                    },
+                    {
+                      "value": 0.0,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/influencnoisewhite/influencnoisewhite",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Influencnoisewhite"
+                    },
+                    {
+                      "value": 1,
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/blur/blur",
+                        "controlAddress": "/reference"
+                      },
+                      "hexMode": false,
+                      "controlAddress": "/Blur"
+                    },
+                    {
+                      "value": [
+                        1.0,
+                        0.5450980663299561,
+                        0.0,
+                        1.0
+                      ],
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/color/color",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Color"
+                    },
+                    {
+                      "controlMode": 2,
+                      "reference": {
+                        "value": "/customVariables/slime/variables/color2/color2",
+                        "controlAddress": "/reference"
+                      },
+                      "controlAddress": "/Color2"
+                    }
+                  ],
+                  "owned": true,
+                  "niceName": "Switch"
+                }
+              },
+              "owned": true,
+              "niceName": "main"
+            }
+          }
+        },
+        "treeData": {
+          "DESCRIPTION": "TD OSC Query Server",
+          "CONTENTS": {
+            "Slime": {
+              "CONTENTS": {
+                "Slime": {
+                  "CONTENTS": {
+                    "General": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "General",
+                      "FULL_PATH": "/Slime/Slime/General",
+                      "VALUE": [
+                        ""
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Resolution": {
+                      "TYPE": "ff",
+                      "DESCRIPTION": "Resolution",
+                      "FULL_PATH": "/Slime/Slime/Resolution",
+                      "VALUE": [
+                        6000.0,
+                        1200.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 10000.0,
+                          "MIN": 0.0
+                        },
+                        {
+                          "MAX": 10000.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Nbagentsroot": {
+                      "TYPE": "i",
+                      "DESCRIPTION": "Nbagentsroot",
+                      "FULL_PATH": "/Slime/Slime/Nbagentsroot",
+                      "VALUE": [
+                        3000
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 2000.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Agentssizepx": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Agentssizepx",
+                      "FULL_PATH": "/Slime/Slime/Agentssizepx",
+                      "VALUE": [
+                        1.224105358123779
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 4.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Agentsopacity": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Agentsopacity",
+                      "FULL_PATH": "/Slime/Slime/Agentsopacity",
+                      "VALUE": [
+                        0.1399002969264984
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Initradius": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Initradius",
+                      "FULL_PATH": "/Slime/Slime/Initradius",
+                      "VALUE": [
+                        0.888
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Initoffset": {
+                      "TYPE": "ff",
+                      "DESCRIPTION": "Initoffset",
+                      "FULL_PATH": "/Slime/Slime/Initoffset",
+                      "VALUE": [
+                        0.0,
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": -1.0
+                        },
+                        {
+                          "MAX": 1.0,
+                          "MIN": -1.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Reset": {
+                      "TYPE": "N",
+                      "DESCRIPTION": "Reset",
+                      "FULL_PATH": "/Slime/Slime/Reset",
+                      "ACCESS": 3
+                    },
+                    "Diffusion": {
+                      "TYPE": "i",
+                      "DESCRIPTION": "Diffusion",
+                      "FULL_PATH": "/Slime/Slime/Diffusion",
+                      "VALUE": [
+                        1
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 5.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Evaporation": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Evaporation",
+                      "FULL_PATH": "/Slime/Slime/Evaporation",
+                      "VALUE": [
+                        0.9300000071525574
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Trailmapinfluence": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Trailmapinfluence",
+                      "FULL_PATH": "/Slime/Slime/Trailmapinfluence",
+                      "VALUE": [
+                        1.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Main": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Main",
+                      "FULL_PATH": "/Slime/Slime/Main",
+                      "VALUE": [
+                        "0.0"
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Stepsize": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Stepsize",
+                      "FULL_PATH": "/Slime/Slime/Stepsize",
+                      "VALUE": [
+                        1.273724913597107
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 10.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sasensorsangle": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sasensorsangle",
+                      "FULL_PATH": "/Slime/Slime/Sasensorsangle",
+                      "VALUE": [
+                        3.046393394470215
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Rarotateangle": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Rarotateangle",
+                      "FULL_PATH": "/Slime/Slime/Rarotateangle",
+                      "VALUE": [
+                        0.2360297441482544
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sensorsoffset": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sensorsoffset",
+                      "FULL_PATH": "/Slime/Slime/Sensorsoffset",
+                      "VALUE": [
+                        10.98709106445312
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 100.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Agentsizemult": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Agentsizemult",
+                      "FULL_PATH": "/Slime/Slime/Agentsizemult",
+                      "VALUE": [
+                        0.3170762360095978
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Hueoffset": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Hueoffset",
+                      "FULL_PATH": "/Slime/Slime/Hueoffset",
+                      "VALUE": [
+                        -360.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 360.0,
+                          "MIN": -360.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Saturationmult": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Saturationmult",
+                      "FULL_PATH": "/Slime/Slime/Saturationmult",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Alt1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Alt1",
+                      "FULL_PATH": "/Slime/Slime/Alt1",
+                      "VALUE": [
+                        ""
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Altinfluence1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Altinfluence1",
+                      "FULL_PATH": "/Slime/Slime/Altinfluence1",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Alttrailinfluence1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Alttrailinfluence1",
+                      "FULL_PATH": "/Slime/Slime/Alttrailinfluence1",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Stepsize1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Stepsize1",
+                      "FULL_PATH": "/Slime/Slime/Stepsize1",
+                      "VALUE": [
+                        0.6744868159294128
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 10.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sasensorsangle1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sasensorsangle1",
+                      "FULL_PATH": "/Slime/Slime/Sasensorsangle1",
+                      "VALUE": [
+                        0.4799999892711639
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Rarotateangle1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Rarotateangle1",
+                      "FULL_PATH": "/Slime/Slime/Rarotateangle1",
+                      "VALUE": [
+                        0.2300000041723251
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sensorsoffset1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sensorsoffset1",
+                      "FULL_PATH": "/Slime/Slime/Sensorsoffset1",
+                      "VALUE": [
+                        3.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 100.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Agentsizemult1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Agentsizemult1",
+                      "FULL_PATH": "/Slime/Slime/Agentsizemult1",
+                      "VALUE": [
+                        0.1879999935626984
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Hueoffset1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Hueoffset1",
+                      "FULL_PATH": "/Slime/Slime/Hueoffset1",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 360.0,
+                          "MIN": -360.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Saturationmult1": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Saturationmult1",
+                      "FULL_PATH": "/Slime/Slime/Saturationmult1",
+                      "VALUE": [
+                        3.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Alt2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Alt2",
+                      "FULL_PATH": "/Slime/Slime/Alt2",
+                      "VALUE": [
+                        ""
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Altinfluence2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Altinfluence2",
+                      "FULL_PATH": "/Slime/Slime/Altinfluence2",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Alttrailinfluence2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Alttrailinfluence2",
+                      "FULL_PATH": "/Slime/Slime/Alttrailinfluence2",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Stepsize2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Stepsize2",
+                      "FULL_PATH": "/Slime/Slime/Stepsize2",
+                      "VALUE": [
+                        1.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 10.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sasensorsangle2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sasensorsangle2",
+                      "FULL_PATH": "/Slime/Slime/Sasensorsangle2",
+                      "VALUE": [
+                        1.57
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Rarotateangle2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Rarotateangle2",
+                      "FULL_PATH": "/Slime/Slime/Rarotateangle2",
+                      "VALUE": [
+                        0.5
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.14,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sensorsoffset2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sensorsoffset2",
+                      "FULL_PATH": "/Slime/Slime/Sensorsoffset2",
+                      "VALUE": [
+                        10.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 100.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Agentsizemult2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Agentsizemult2",
+                      "FULL_PATH": "/Slime/Slime/Agentsizemult2",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Hueoffset2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Hueoffset2",
+                      "FULL_PATH": "/Slime/Slime/Hueoffset2",
+                      "VALUE": [
+                        304.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 360.0,
+                          "MIN": -360.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Saturationmult2": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Saturationmult2",
+                      "FULL_PATH": "/Slime/Slime/Saturationmult2",
+                      "VALUE": [
+                        2.78
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 3.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    }
+                  }
+                }
+              }
+            },
+            "main": {
+              "CONTENTS": {
+                "Switch": {
+                  "CONTENTS": {
+                    "Index": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Index",
+                      "FULL_PATH": "/main/Switch/Index",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 10.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Sourcemult": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Sourcemult",
+                      "FULL_PATH": "/main/Switch/Sourcemult",
+                      "VALUE": [
+                        0.06474405527114868
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 2.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Influencnoisewhite": {
+                      "TYPE": "f",
+                      "DESCRIPTION": "Influencnoisewhite",
+                      "FULL_PATH": "/main/Switch/Influencnoisewhite",
+                      "VALUE": [
+                        0.0
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 1.0,
+                          "MIN": 0.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Blur": {
+                      "TYPE": "i",
+                      "DESCRIPTION": "Blur",
+                      "FULL_PATH": "/main/Switch/Blur",
+                      "VALUE": [
+                        1
+                      ],
+                      "RANGE": [
+                        {
+                          "MAX": 32.0,
+                          "MIN": 1.0
+                        }
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Color": {
+                      "TYPE": "r",
+                      "DESCRIPTION": "Color",
+                      "FULL_PATH": "/main/Switch/Color",
+                      "VALUE": [
+                        "#ff8b00ff"
+                      ],
+                      "ACCESS": 3
+                    },
+                    "Color2": {
+                      "TYPE": "r",
+                      "DESCRIPTION": "Color2",
+                      "FULL_PATH": "/main/Switch/Color2",
+                      "VALUE": [
+                        "#00baffff"
+                      ],
+                      "ACCESS": 3
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "hasListenExtension": true
+      },
+      {
+        "niceName": "Sound Card",
+        "type": "Sound Card",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "containers": {
+            "inputVolumes": {
+            },
+            "outputVolumes": {
+              "editorIsCollapsed": true
+            },
+            "monitor": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            },
+            "fftAnalysis": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ],
+              "editorIsCollapsed": true,
+              "viewOffset": [
+                0,
+                0
+              ],
+              "viewZoom": 1.0
+            },
+            "ltc": {
+              "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "analyzer": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/enabled"
+            }
+          ],
+          "editorIsCollapsed": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "customVariables": {
+    "items": [
+      {
+        "niceName": "Slime",
+        "type": "CVGroup",
+        "params": {
+        },
+        "variables": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 1.0,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.9879999756813049,
+                  "controlAddress": "/trailmapinfluence",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Trailmapinfluence",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Trailmapinfluence",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.0,
+                  "controlAddress": "/main",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Main",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Main",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.7165401577949524,
+                  "minValue": 0.0,
+                  "maxValue": 10.0,
+                  "default": 2.740000009536743,
+                  "controlAddress": "/stepsize",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Stepsize",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Stepsize",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 3.046393394470215,
+                  "minValue": 0.0,
+                  "maxValue": 3.14,
+                  "default": 1.259999990463257,
+                  "controlAddress": "/sasensorsangle",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Sasensorsangle",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Sasensorsangle",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.2360297441482544,
+                  "minValue": 0.0,
+                  "maxValue": 3.14,
+                  "default": 2.84,
+                  "controlAddress": "/rarotateangle",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Rarotateangle",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Rarotateangle",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 10.98709106445312,
+                  "minValue": 0.0,
+                  "maxValue": 100.0,
+                  "default": 62.59999847412109,
+                  "controlAddress": "/sensorsoffset",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Sensorsoffset",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Sensorsoffset",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.3170762360095978,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.1030000001192093,
+                  "controlAddress": "/agentsizemult",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Agentsizemult",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Agentsizemult",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.8659999966621399,
+                  "controlAddress": "/altinfluence1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Altinfluence1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Altinfluence1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.8180000185966492,
+                  "controlAddress": "/alttrailinfluence1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Alttrailinfluence1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Alttrailinfluence1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.6744868159294128,
+                  "minValue": 0.0,
+                  "maxValue": 10.0,
+                  "default": 5.710000038146973,
+                  "controlAddress": "/stepsize1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Stepsize1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Stepsize1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.4799999892711639,
+                  "minValue": 0.0,
+                  "maxValue": 3.14,
+                  "default": 0.4799999892711639,
+                  "controlAddress": "/sasensorsangle1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Sasensorsangle1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Sasensorsangle1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.2300000041723251,
+                  "minValue": 0.0,
+                  "maxValue": 3.14,
+                  "default": 0.2300000041723251,
+                  "controlAddress": "/rarotateangle1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Rarotateangle1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Rarotateangle1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 3.0,
+                  "minValue": 0.0,
+                  "maxValue": 100.0,
+                  "default": 3.0,
+                  "controlAddress": "/sensorsoffset1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Sensorsoffset1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Sensorsoffset1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.1879999935626984,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.1879999935626984,
+                  "controlAddress": "/agentsizemult1",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Agentsizemult1",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Agentsizemult1",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 10.0,
+                  "default": 0.0,
+                  "controlAddress": "/index",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Index",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Index",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 2.0,
+                  "default": 0.0,
+                  "controlAddress": "/sourcemult",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Sourcemult",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Sourcemult",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.5320232510566711,
+                  "minValue": 0.0,
+                  "maxValue": 4.0,
+                  "default": 0.4381817877292633,
+                  "controlAddress": "/agentssizepx",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Agentssizepx",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Agentssizepx",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.1399002969264984,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.08418181538581848,
+                  "controlAddress": "/agentsopacity",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Agentsopacity",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Agentsopacity",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 0.0,
+                  "minValue": 0.0,
+                  "maxValue": 1.0,
+                  "default": 0.0,
+                  "controlAddress": "/influencnoisewhite",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Influencnoisewhite",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Influencnoisewhite",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 1,
+                  "minValue": 1,
+                  "maxValue": 32,
+                  "default": 24,
+                  "hexMode": false,
+                  "controlAddress": "/blur",
+                  "feedbackOnly": false,
+                  "type": "Integer",
+                  "niceName": "Blur",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Integer",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Blur",
+              "editorIsCollapsed": true,
+              "type": "Int Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.5450980663299561,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color",
+                  "feedbackOnly": false,
+                  "type": "Color",
+                  "niceName": "Color",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Color",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Color",
+              "editorIsCollapsed": true,
+              "type": "Color Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    0.0,
+                    0.729411780834198,
+                    1.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color2",
+                  "feedbackOnly": false,
+                  "type": "Color",
+                  "niceName": "Color2",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Color",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Color2",
+              "editorIsCollapsed": true,
+              "type": "Color Parameter"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "presets": {
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.0,
+                    0.09516239166259766,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                }
+              ],
+              "niceName": "INIT",
+              "editorIsCollapsed": true,
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 1.273724913597107,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.3170762360095978,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 0.6744868159294128,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4799999892711639,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.2300000041723251,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 3.0,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.1879999935626984,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.07067137956619263,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.224105358123779,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1399002969264984,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 32,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          1.0,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    0.0,
+                    1.0,
+                    0.07181763648986816,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                }
+              ],
+              "niceName": "Deblur",
+              "editorIsCollapsed": true,
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 1.273724913597107,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.3170762360095978,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 0.6744868159294128,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4799999892711639,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.2300000041723251,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 3.0,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.1879999935626984,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.224105358123779,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1399002969264984,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.4406670331954956,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                },
+                {
+                  "value": 5.0,
+                  "controlAddress": "/defaultLoadTime"
+                }
+              ],
+              "niceName": "Reveal 1",
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 0.973607063293457,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 4.352903842926025,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.2349647879600525,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.7947214245796204,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.331378310918808,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 3.636363744735718,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.3695017695426941,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 1.592815399169922,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 6.225799083709717,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.7862404584884644,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.51736044883728,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.08124927431344986,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.3,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.4406670331954956,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                },
+                {
+                  "value": 5.0,
+                  "controlAddress": "/defaultLoadTime"
+                }
+              ],
+              "niceName": "Reveal 2",
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 0.8338422775268555,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.2349647879600525,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 1.085044145584106,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.1761293411254883,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4233725666999817,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 4.466268539428711,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.03843986988067627,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 2.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.728504180908203,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1164398938417435,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.4406670331954956,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                },
+                {
+                  "value": 5.0,
+                  "controlAddress": "/defaultLoadTime"
+                }
+              ],
+              "niceName": "Reveal 3",
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 0.8338422775268555,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.2349647879600525,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 1.085044145584106,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.1761293411254883,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4233725666999817,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 4.466268539428711,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.03843986988067627,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 3.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.728504180908203,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1164398938417435,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.4406670331954956,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                },
+                {
+                  "value": 5.0,
+                  "controlAddress": "/defaultLoadTime"
+                }
+              ],
+              "niceName": "Reveal 4",
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 0.8338422775268555,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.2349647879600525,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 1.085044145584106,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.1761293411254883,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4233725666999817,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 4.466268539428711,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.03843986988067627,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 4.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.728504180908203,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1164398938417435,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    1.0,
+                    0.4406670331954956,
+                    0.0,
+                    1.0
+                  ],
+                  "controlAddress": "/color"
+                },
+                {
+                  "value": 5.0,
+                  "controlAddress": "/defaultLoadTime"
+                }
+              ],
+              "niceName": "Reveal 5",
+              "type": "MorphTarget",
+              "values": {
+                "containers": {
+                  "trailmapinfluence": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/trailmapinfluence"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Trailmapinfluence"
+                  },
+                  "main": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/main"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Main"
+                  },
+                  "stepsize": {
+                    "parameters": [
+                      {
+                        "value": 0.8338422775268555,
+                        "controlAddress": "/stepsize"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize"
+                  },
+                  "sasensorsangle": {
+                    "parameters": [
+                      {
+                        "value": 3.046393394470215,
+                        "controlAddress": "/sasensorsangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle"
+                  },
+                  "rarotateangle": {
+                    "parameters": [
+                      {
+                        "value": 0.2360297441482544,
+                        "controlAddress": "/rarotateangle"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle"
+                  },
+                  "sensorsoffset": {
+                    "parameters": [
+                      {
+                        "value": 10.98709106445312,
+                        "controlAddress": "/sensorsoffset"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset"
+                  },
+                  "agentsizemult": {
+                    "parameters": [
+                      {
+                        "value": 0.2349647879600525,
+                        "controlAddress": "/agentsizemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult"
+                  },
+                  "altinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 1.0,
+                        "controlAddress": "/altinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Altinfluence1"
+                  },
+                  "alttrailinfluence1": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/alttrailinfluence1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Alttrailinfluence1"
+                  },
+                  "stepsize1": {
+                    "parameters": [
+                      {
+                        "value": 1.085044145584106,
+                        "controlAddress": "/stepsize1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Stepsize1"
+                  },
+                  "sasensorsangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.1761293411254883,
+                        "controlAddress": "/sasensorsangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sasensorsangle1"
+                  },
+                  "rarotateangle1": {
+                    "parameters": [
+                      {
+                        "value": 0.4233725666999817,
+                        "controlAddress": "/rarotateangle1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Rarotateangle1"
+                  },
+                  "sensorsoffset1": {
+                    "parameters": [
+                      {
+                        "value": 4.466268539428711,
+                        "controlAddress": "/sensorsoffset1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sensorsoffset1"
+                  },
+                  "agentsizemult1": {
+                    "parameters": [
+                      {
+                        "value": 0.03843986988067627,
+                        "controlAddress": "/agentsizemult1"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsizemult1"
+                  },
+                  "index": {
+                    "parameters": [
+                      {
+                        "value": 5.0,
+                        "controlAddress": "/index"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Index"
+                  },
+                  "sourcemult": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/sourcemult"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Sourcemult"
+                  },
+                  "agentssizepx": {
+                    "parameters": [
+                      {
+                        "value": 1.728504180908203,
+                        "controlAddress": "/agentssizepx"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentssizepx"
+                  },
+                  "agentsopacity": {
+                    "parameters": [
+                      {
+                        "value": 0.1164398938417435,
+                        "controlAddress": "/agentsopacity"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Agentsopacity"
+                  },
+                  "influencnoisewhite": {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/influencnoisewhite"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Influencnoisewhite"
+                  },
+                  "blur": {
+                    "parameters": [
+                      {
+                        "value": 1,
+                        "hexMode": false,
+                        "controlAddress": "/blur"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Blur"
+                  },
+                  "color": {
+                    "parameters": [
+                      {
+                        "value": [
+                          1.0,
+                          0.5450980663299561,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color"
+                  },
+                  "color2": {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.0,
+                          0.729411780834198,
+                          1.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color2"
+                      }
+                    ],
+                    "owned": true,
+                    "niceName": "Color2"
+                  }
+                }
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "states": {
+    "viewOffset": [
+      -62,
+      -918
+    ],
+    "viewZoom": 1.0,
+    "transitions": {
+      "hideInEditor": true,
+      "viewOffset": [
+        0,
+        0
+      ],
+      "viewZoom": 1.0
+    },
+    "comments": {
+      "hideInEditor": true,
+      "viewOffset": [
+        -62,
+        -918
+      ],
+      "viewZoom": 1.0
+    }
+  },
+  "sequences": {
+    "items": [
+      {
+        "parameters": [
+          {
+            "value": 644.1799999999999,
+            "controlAddress": "/totalTime"
+          },
+          {
+            "value": 169.8380126953125,
+            "controlAddress": "/viewStartTime"
+          },
+          {
+            "value": 453.2772216796875,
+            "controlAddress": "/viewEndTime"
+          },
+          {
+            "value": "",
+            "controlAddress": "/ltcSyncModule",
+            "enabled": false
+          }
+        ],
+        "niceName": "Sequence",
+        "type": "Sequence",
+        "layers": {
+          "hideInEditor": true,
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 60.0,
+                  "controlAddress": "/listSize"
+                }
+              ],
+              "niceName": "Trigger",
+              "type": "Trigger",
+              "triggers": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": 172.1199951171875,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.5,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "INIT",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "td",
+                          "commandPath": "",
+                          "commandType": "Trigger",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/Slime/Slime/Reset",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/init",
+                                "controlAddress": "/targetPreset"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 197.8000030517578,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.5583333969116211,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "P1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/deblur",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 20.0,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 214.3600158691406,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4999999701976776,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "R1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/reveal1",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 15.29999923706055,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 231.1400299072266,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4750000238418579,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "R2",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/reveal2",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 15.29999923706055,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 247.0600128173828,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4500000178813934,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "R3",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/reveal3",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 15.29999923706055,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      },
+                      {
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 264.280029296875,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4749999940395355,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "R4",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/reveal4",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 15.29999923706055,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      },
+                      {
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 282.9200439453125,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4000000357627869,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "R5",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to preset",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/slime/presets/reveal5",
+                                "controlAddress": "/targetPreset"
+                              },
+                              {
+                                "value": 15.29999923706055,
+                                "controlAddress": "/interpolationTime",
+                                "enabled": true
+                              }
+                            ],
+                            "containers": {
+                              "interpolationCurve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  },
+                                  {
+                                    "value": false,
+                                    "controlAddress": "/enabled"
+                                  }
+                                ],
+                                "editorIsCollapsed": true,
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0,
+                                "owned": true,
+                                "niceName": "Interpolation Curve"
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                }
+              ],
+              "niceName": "Audio",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/startTime"
+                      },
+                      {
+                        "value": "D:/Projects/Ultreia/EJCARVLS/Sound/continu\u00e9 \u00e0 regarder vers le soleil V8.mp3",
+                        "controlAddress": "/filePath"
+                      },
+                      {
+                        "value": 15.40000438690186,
+                        "controlAddress": "/volume"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": true,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 80.0,
+                  "controlAddress": "/listSize"
+                },
+                {
+                  "value": 80,
+                  "hexMode": false,
+                  "controlAddress": "/uiHeight"
+                }
+              ],
+              "niceName": "Audio 1",
+              "type": "Audio",
+              "clips": {
+                "hideInEditor": true,
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/startTime"
+                      },
+                      {
+                        "value": "D:/Projects/Ultreia/EJCARVLS/Sound/continu\u00e9 \u00e0 regarder vers le soleil V8.mp3",
+                        "controlAddress": "/filePath"
+                      },
+                      {
+                        "value": 21.59999084472656,
+                        "controlAddress": "/volume"
+                      }
+                    ],
+                    "niceName": "AudioClip",
+                    "editorIsCollapsed": true,
+                    "type": "AudioClip"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "channels": {
+                "parameters": [
+                  {
+                    "value": false,
+                    "controlAddress": "/channelOutLeft"
+                  },
+                  {
+                    "value": true,
+                    "controlAddress": "/channelOutRight"
+                  }
+                ]
+              },
+              "audioModule": "soundCard"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "cues": {
+          "hideInEditor": true,
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": 172.1199951171875,
+                  "controlAddress": "/time"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/loopJumpCue"
+                }
+              ],
+              "niceName": "Cue",
+              "type": "BaseItem"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 298.4200134277344,
+                  "controlAddress": "/time"
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/loopJumpCue"
+                }
+              ],
+              "niceName": "Cue 1",
+              "type": "BaseItem"
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "editing": true
+      }
+    ],
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  },
+  "routers": {
+    "viewOffset": [
+      0,
+      0
+    ],
+    "viewZoom": 1.0
+  }
+}
