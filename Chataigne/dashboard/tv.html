@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotated Full Page Iframe</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: #000;
+        }
+        .wrapper {
+            width: 1080px;
+            height: 1920px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            transform-origin: center center;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        #fullscreen-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            background: rgba(30,30,30,0.8);
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #fullscreen-btn.hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="fullscreen-btn">⛶ Full Screen</button>
+    <script>
+    const btn = document.getElementById('fullscreen-btn');
+    btn.onclick = function() {
+        const elem = document.documentElement;
+        if (!document.fullscreenElement) {
+            if (elem.requestFullscreen) elem.requestFullscreen();
+            else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+            else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+        } else {
+            if (document.exitFullscreen) document.exitFullscreen();
+            else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+            else if (document.msExitFullscreen) document.msExitFullscreen();
+        }
+    };
+
+    function updateBtn() {
+        if (document.fullscreenElement) {
+            btn.classList.add('hide');
+        } else {
+            btn.classList.remove('hide');
+        }
+    }
+
+    document.addEventListener('fullscreenchange', updateBtn);
+    document.addEventListener('webkitfullscreenchange', updateBtn);
+    document.addEventListener('msfullscreenchange', updateBtn);
+    updateBtn();
+    </script>
+    <div class="wrapper">
+        <iframe src="http://192.168.0.111/#/?disableList&disableMenu"></iframe>
+    </div>
+</body>
+</html>
