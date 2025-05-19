@@ -8,10 +8,9 @@ After Effect/EJCARVLS.aep Logs/
 Touchdesigner/Backup/
 Touchdesigner/DepthToPointCloud.*.toe
 Videos/
-Touchdesigner/Street_Cours/
-Touchdesigner/Street_Jar/
 
-Touchdesigner/Street_FDS/
+
+Touchdesigner/.DS_Store
 
 
 EJCARVLS-Unity/ProjectSettings/Packages/
@@ -22,3 +21,10 @@ Touchdesigner/SlimeControl_autosave/
 *.dmp
 
 Touchdesigner/Slime.*.toe
+Touchdesigner/Street_Cours/
+Touchdesigner/Street_Jar/
+
+Touchdesigner/Street_FDS/
+Sound/
+
+_Build/
