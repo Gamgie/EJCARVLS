@@ -65,32 +65,32 @@
   "layout": {
     "mainLayout": {
       "type": 1,
-      "width": 1920,
-      "height": 1034,
+      "width": 1692,
+      "height": 961,
       "direction": 2,
       "shifters": [
         {
           "type": 1,
-          "width": 1920,
-          "height": 1034,
+          "width": 1692,
+          "height": 961,
           "direction": 2,
           "shifters": [
             {
               "type": 1,
-              "width": 1920,
-              "height": 697,
+              "width": 1692,
+              "height": 661,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 316,
-                  "height": 697,
+                  "height": 661,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 316,
-                      "height": 381,
+                      "height": 363,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -101,7 +101,7 @@
                     {
                       "type": 0,
                       "width": 316,
-                      "height": 310,
+                      "height": 292,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -113,8 +113,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 997,
-                  "height": 697,
+                  "width": 769,
+                  "height": 661,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -134,7 +134,7 @@
                 {
                   "type": 0,
                   "width": 595,
-                  "height": 697,
+                  "height": 661,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -146,14 +146,14 @@
             },
             {
               "type": 1,
-              "width": 1920,
-              "height": 331,
+              "width": 1692,
+              "height": 294,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 331,
+                  "height": 294,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -163,8 +163,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 1256,
-                  "height": 331,
+                  "width": 1261,
+                  "height": 294,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -174,8 +174,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 474,
-                  "height": 331,
+                  "width": 241,
+                  "height": 294,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -275,7 +275,7 @@
                       "controlAddress": "/Nbagentsroot"
                     },
                     {
-                      "value": 1.22410523891449,
+                      "value": 0.3716137409210205,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentssizepx/agentssizepx",
@@ -284,7 +284,7 @@
                       "controlAddress": "/Agentssizepx"
                     },
                     {
-                      "value": 0.1076422557234764,
+                      "value": 0.02473498322069645,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsopacity/agentsopacity",
@@ -301,7 +301,7 @@
                       "controlAddress": "/Evaporation"
                     },
                     {
-                      "value": 1.0,
+                      "value": 0.9116607904434204,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/trailmapinfluence/trailmapinfluence",
@@ -319,7 +319,7 @@
                       "controlAddress": "/Main"
                     },
                     {
-                      "value": 2.124164581298828,
+                      "value": 0.8338422775268555,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/stepsize/stepsize",
@@ -328,7 +328,7 @@
                       "controlAddress": "/Stepsize"
                     },
                     {
-                      "value": 3.055601596832275,
+                      "value": 3.046393394470215,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sasensorsangle/sasensorsangle",
@@ -337,7 +337,7 @@
                       "controlAddress": "/Sasensorsangle"
                     },
                     {
-                      "value": 0.05186551809310913,
+                      "value": 0.2360297441482544,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/rarotateangle/rarotateangle",
@@ -346,7 +346,7 @@
                       "controlAddress": "/Rarotateangle"
                     },
                     {
-                      "value": 31.80820274353027,
+                      "value": 10.98709106445312,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sensorsoffset/sensorsoffset",
@@ -355,7 +355,7 @@
                       "controlAddress": "/Sensorsoffset"
                     },
                     {
-                      "value": 0.7041730284690857,
+                      "value": 0.05475276708602905,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsizemult/agentsizemult",
@@ -364,7 +364,7 @@
                       "controlAddress": "/Agentsizemult"
                     },
                     {
-                      "value": 0.9090908765792847,
+                      "value": 0.9399293065071106,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/altinfluence1/altinfluence1",
@@ -373,7 +373,7 @@
                       "controlAddress": "/Altinfluence1"
                     },
                     {
-                      "value": 0.4809384047985077,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/alttrailinfluence1/alttrailinfluence1",
@@ -382,7 +382,7 @@
                       "controlAddress": "/Alttrailinfluence1"
                     },
                     {
-                      "value": 3.167155265808105,
+                      "value": 1.085044145584106,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/stepsize1/stepsize1",
@@ -391,7 +391,7 @@
                       "controlAddress": "/Stepsize1"
                     },
                     {
-                      "value": 0.222170352935791,
+                      "value": 0.1761293411254883,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sasensorsangle1/sasensorsangle1",
@@ -400,7 +400,7 @@
                       "controlAddress": "/Sasensorsangle1"
                     },
                     {
-                      "value": 0.1931672245264053,
+                      "value": 0.4233725666999817,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/rarotateangle1/rarotateangle1",
@@ -409,7 +409,7 @@
                       "controlAddress": "/Rarotateangle1"
                     },
                     {
-                      "value": 52.26684951782227,
+                      "value": 4.466268539428711,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/sensorsoffset1/sensorsoffset1",
@@ -418,7 +418,7 @@
                       "controlAddress": "/Sensorsoffset1"
                     },
                     {
-                      "value": 0.2994369268417358,
+                      "value": 0.03843986988067627,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/agentsizemult1/agentsizemult1",
@@ -469,7 +469,7 @@
                 "Switch": {
                   "parameters": [
                     {
-                      "value": 2.0,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/index/index",
@@ -478,7 +478,7 @@
                       "controlAddress": "/Index"
                     },
                     {
-                      "value": 1.0,
+                      "value": 0.0,
                       "controlMode": 2,
                       "reference": {
                         "value": "/customVariables/slime/variables/influencnoisewhite/influencnoisewhite",
@@ -498,9 +498,9 @@
                     },
                     {
                       "value": [
+                        0.07307843118906021,
+                        0.4629411995410919,
                         1.0,
-                        0.5450980663299561,
-                        0.0,
                         1.0
                       ],
                       "controlMode": 2,
@@ -1306,7 +1306,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.9116607904434204,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.9879999756813049,
@@ -1348,7 +1348,7 @@
             {
               "parameters": [
                 {
-                  "value": 2.124164581298828,
+                  "value": 0.8338422775268555,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 2.740000009536743,
@@ -1369,7 +1369,7 @@
             {
               "parameters": [
                 {
-                  "value": 3.055601596832275,
+                  "value": 3.046393394470215,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 1.259999990463257,
@@ -1390,7 +1390,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.05186551809310913,
+                  "value": 0.2360297441482544,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 2.84,
@@ -1411,7 +1411,7 @@
             {
               "parameters": [
                 {
-                  "value": 31.80820274353027,
+                  "value": 10.98709106445312,
                   "minValue": 0.0,
                   "maxValue": 100.0,
                   "default": 62.59999847412109,
@@ -1432,7 +1432,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.7041730284690857,
+                  "value": 0.05475276708602905,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.1030000001192093,
@@ -1453,7 +1453,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.9090908765792847,
+                  "value": 0.9399293065071106,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.8659999966621399,
@@ -1474,7 +1474,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.4809384047985077,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.8180000185966492,
@@ -1495,7 +1495,7 @@
             {
               "parameters": [
                 {
-                  "value": 3.167155265808105,
+                  "value": 1.085044145584106,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 5.710000038146973,
@@ -1516,7 +1516,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.222170352935791,
+                  "value": 0.1761293411254883,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 0.4799999892711639,
@@ -1537,7 +1537,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.1931672245264053,
+                  "value": 0.4233725666999817,
                   "minValue": 0.0,
                   "maxValue": 3.14,
                   "default": 0.2300000041723251,
@@ -1558,7 +1558,7 @@
             {
               "parameters": [
                 {
-                  "value": 52.26684951782227,
+                  "value": 4.466268539428711,
                   "minValue": 0.0,
                   "maxValue": 100.0,
                   "default": 3.0,
@@ -1579,7 +1579,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.2994369268417358,
+                  "value": 0.03843986988067627,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.1879999935626984,
@@ -1600,7 +1600,7 @@
             {
               "parameters": [
                 {
-                  "value": 2.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 10.0,
                   "default": 0.0,
@@ -1621,7 +1621,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.22410523891449,
+                  "value": 0.3716137409210205,
                   "minValue": 0.0,
                   "maxValue": 4.0,
                   "default": 0.4381817877292633,
@@ -1642,7 +1642,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.1076422557234764,
+                  "value": 0.02473498322069645,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.08418181538581848,
@@ -1663,7 +1663,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 1.0,
                   "default": 0.0,
@@ -1707,9 +1707,9 @@
               "parameters": [
                 {
                   "value": [
+                    0.07307843118906021,
+                    0.4629411995410919,
                     1.0,
-                    0.5450980663299561,
-                    0.0,
                     1.0
                   ],
                   "controlAddress": "/color",
@@ -1771,6 +1771,7 @@
                 }
               ],
               "niceName": "INIT",
+              "editorIsCollapsed": true,
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -2252,6 +2253,7 @@
                 }
               ],
               "niceName": "P 2",
+              "editorIsCollapsed": true,
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -3394,7 +3396,7 @@
                   "agentsopacity": {
                     "parameters": [
                       {
-                        "value": 0.07305262982845306,
+                        "value": 0.3780379891395569,
                         "controlAddress": "/agentsopacity"
                       }
                     ],
@@ -3472,6 +3474,7 @@
                 }
               ],
               "niceName": "Resiste",
+              "editorIsCollapsed": true,
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -3628,7 +3631,7 @@
                   "agentssizepx": {
                     "parameters": [
                       {
-                        "value": 2.18511176109314,
+                        "value": 2.314144134521484,
                         "controlAddress": "/agentssizepx"
                       }
                     ],
@@ -3638,7 +3641,7 @@
                   "agentsopacity": {
                     "parameters": [
                       {
-                        "value": 0.07305262982845306,
+                        "value": 0.4572168588638306,
                         "controlAddress": "/agentsopacity"
                       }
                     ],
@@ -3716,6 +3719,7 @@
                 }
               ],
               "niceName": "Silhouettes",
+              "editorIsCollapsed": true,
               "type": "MorphTarget",
               "values": {
                 "containers": {
@@ -4235,11 +4239,11 @@
             "controlAddress": "/totalTime"
           },
           {
-            "value": 110.8700714111328,
+            "value": 0.0,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 437.3561401367188,
+            "value": 644.1799926757812,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -4331,7 +4335,7 @@
                   {
                     "parameters": [
                       {
-                        "value": 190.4599914550781,
+                        "value": 183.3599853515625,
                         "controlAddress": "/time"
                       },
                       {
@@ -4474,11 +4478,11 @@
                   {
                     "parameters": [
                       {
-                        "value": 203.8399810791016,
+                        "value": 200.1799926757812,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.35833340883255,
+                        "value": 0.4583334028720856,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -4505,7 +4509,7 @@
                                 "controlAddress": "/targetPreset"
                               },
                               {
-                                "value": 20.0,
+                                "value": 10.10000038146973,
                                 "controlAddress": "/interpolationTime",
                                 "enabled": true
                               }
@@ -4621,11 +4625,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 220.1800384521484,
+                        "value": 218.3800354003906,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.1000000089406967,
+                        "value": 0.125,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -4764,11 +4768,11 @@
                   {
                     "parameters": [
                       {
-                        "value": 236.1400451660156,
+                        "value": 242.7400512695312,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.675000011920929,
+                        "value": 0.7999999523162842,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -4907,11 +4911,11 @@
                   {
                     "parameters": [
                       {
-                        "value": 251.5999908447266,
+                        "value": 266.6399841308594,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.2249999642372131,
+                        "value": 0.2249999493360519,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -5058,11 +5062,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 286.2000427246094,
+                        "value": 289.5400695800781,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.5999999642372131,
+                        "value": 0.574999988079071,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -5503,11 +5507,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 443.7200622558594,
+                        "value": 433.9400634765625,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.574999988079071,
+                        "value": 0.7250000238418579,
                         "controlAddress": "/flagY"
                       }
                     ],
