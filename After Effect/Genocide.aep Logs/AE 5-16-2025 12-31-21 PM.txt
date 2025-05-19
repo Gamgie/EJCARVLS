@@ -1,0 +1,17 @@
+Adobe After Effects v25.1 Windows 64 render log for project “Genocide.aep”
+
+Rendering started on 5/16/2025 at 12:31:21 PM
+
+  5/16/2025 12:31:22 PM: Starting composition “GenoResiste Cour”.
+
+  Output To: D:\Desktop\GenoResiste Cour.mov    5/16/2025 12:43:40 PM: Finished composition “GenoResiste Cour”.
+
+
+  5/16/2025 12:43:40 PM: Starting composition “GenoResiste Jar”.
+
+  Output To: D:\Desktop\GenoResiste Jar.mov    5/16/2025 12:58:51 PM: Finished composition “GenoResiste Jar”.
+
+
+  Total Time Elapsed: 27 Min, 30 Sec
+Log closed on 5/16/2025 at 12:58:51 PM
+
