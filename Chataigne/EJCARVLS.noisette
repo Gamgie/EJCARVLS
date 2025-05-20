@@ -73,7 +73,7 @@
               "controlAddress": "/backgroundColor"
             },
             {
-              "value": "TV/1.jpg",
+              "value": "TV/3.jpg",
               "relative": true,
               "controlAddress": "/backgroundImage"
             },
@@ -215,7 +215,7 @@
                     {
                       "type": 0,
                       "width": 307,
-                      "height": 355,
+                      "height": 356,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -238,9 +238,9 @@
                 },
                 {
                   "type": 0,
-                  "width": 940,
+                  "width": 1121,
                   "height": 640,
-                  "currentContent": "Dashboard",
+                  "currentContent": "State Machine",
                   "tabs": [
                     {
                       "name": "State Machine"
@@ -258,7 +258,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 661,
+                  "width": 480,
                   "height": 640,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -272,13 +272,13 @@
             {
               "type": 1,
               "width": 1920,
-              "height": 343,
+              "height": 342,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 343,
+                  "height": 342,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -288,8 +288,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 1220,
-                  "height": 343,
+                  "width": 1449,
+                  "height": 342,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -299,8 +299,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 510,
-                  "height": 343,
+                  "width": 281,
+                  "height": 342,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -383,7 +383,7 @@
         "params": {
           "parameters": [
             {
-              "value": 3.949704170227051,
+              "value": 2.811773061752319,
               "controlAddress": "/outVolume"
             }
           ],
@@ -432,7 +432,7 @@
           ],
           "viewZoom": 1.0
         },
-        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Display (3- HD Audio Driver for Display Audio)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"48000.0\"/>\r\n",
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Headphones (LE-Bose QuietComfort 35 Series II)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"48000.0\"/>\r\n",
         "analyzer": {
           "parameters": [
             {
@@ -677,6 +677,495 @@
           ],
           "viewZoom": 1.0
         }
+      },
+      {
+        "niceName": "PJLink",
+        "type": "PJLink",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": 6,
+              "hexMode": false,
+              "controlAddress": "/numProjectors"
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            },
+            "projectors": {
+              "containers": {
+                "projector1": {
+                  "parameters": [
+                    {
+                      "value": "192.168.0.106",
+                      "controlAddress": "/ip"
+                    },
+                    {
+                      "value": 4352,
+                      "hexMode": false,
+                      "controlAddress": "/port"
+                    }
+                  ]
+                },
+                "projector2": {
+                  "parameters": [
+                    {
+                      "value": "192.168.1.112",
+                      "controlAddress": "/ip"
+                    }
+                  ]
+                },
+                "projector3": {
+                  "parameters": [
+                    {
+                      "value": "192.168.1.113",
+                      "controlAddress": "/ip"
+                    }
+                  ]
+                },
+                "projector4": {
+                  "parameters": [
+                    {
+                      "value": "192.168.1.114",
+                      "controlAddress": "/ip"
+                    }
+                  ]
+                },
+                "projector5": {
+                  "parameters": [
+                    {
+                      "value": "192.168.1.116",
+                      "controlAddress": "/ip"
+                    }
+                  ]
+                },
+                "projector6": {
+                  "parameters": [
+                    {
+                      "value": "192.168.1.118",
+                      "controlAddress": "/ip"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "projectors": {
+              "containers": {
+                "projector1": {
+                  "parameters": [
+                    {
+                      "value": "Powering ON",
+                      "controlAddress": "/powerStatus"
+                    }
+                  ]
+                },
+                "projector2": {
+                },
+                "projector3": {
+                },
+                "projector4": {
+                },
+                "projector5": {
+                },
+                "projector6": {
+                }
+              }
+            }
+          }
+        },
+        "clientNames": [
+          "Projector 1",
+          "Projector 2",
+          "Projector 3",
+          "Projector 4",
+          "Projector 5",
+          "Projector 6"
+        ]
+      },
+      {
+        "niceName": "OBS Websocket Advanced",
+        "type": "OBS Websocket Advanced",
+        "scripts": {
+          "items": [
+            {
+              "niceName": "OBSAdvanced",
+              "type": "BaseItem",
+              "scriptParams": {
+                "hideInEditor": true
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": "Lines",
+              "controlAddress": "/protocol"
+            },
+            {
+              "value": false,
+              "controlAddress": "/autoAdd"
+            },
+            {
+              "value": "Space separated",
+              "controlAddress": "/messageStructure"
+            },
+            {
+              "value": "|",
+              "controlAddress": "/customSeparator"
+            },
+            {
+              "value": true,
+              "controlAddress": "/firstValueIsTheName"
+            },
+            {
+              "value": "127.0.0.1:4455",
+              "controlAddress": "/serverPath"
+            },
+            {
+              "value": true,
+              "controlAddress": "/enableAuthentification"
+            },
+            {
+              "value": "https://github.com/KopiasCsaba/Chataigne-Module-OBS-Websocket-Advanced",
+              "controlAddress": "/documentation"
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            },
+            "eventSub": {
+              "parameters": [
+                {
+                  "value": true,
+                  "controlAddress": "/general"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/config"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/scenes"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/inputs"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/transitions"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/filters"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/outputs"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/sceneItems"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/mediaInputs"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/vendors"
+                },
+                {
+                  "value": true,
+                  "controlAddress": "/ui"
+                }
+              ]
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "containers": {
+            "merged": {
+              "containers": {
+                "sceneCollectionList": {
+                  "containers": {
+                    "sceneCollectionsList": {
+                      "owned": true,
+                      "niceName": "sceneCollections list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "SceneCollectionList"
+                },
+                "replayBufferState": {
+                  "owned": true,
+                  "niceName": "ReplayBufferState"
+                },
+                "profileList": {
+                  "containers": {
+                    "profilesList": {
+                      "owned": true,
+                      "niceName": "profiles list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "ProfileList"
+                },
+                "programScene": {
+                  "owned": true,
+                  "niceName": "ProgramScene"
+                },
+                "previewScene": {
+                  "owned": true,
+                  "niceName": "PreviewScene"
+                },
+                "sceneList": {
+                  "owned": true,
+                  "niceName": "SceneList"
+                },
+                "streamState": {
+                  "owned": true,
+                  "niceName": "StreamState"
+                },
+                "sceneTransition": {
+                  "owned": true,
+                  "niceName": "SceneTransition"
+                },
+                "sceneTransitionDuration": {
+                  "owned": true,
+                  "niceName": "SceneTransitionDuration"
+                },
+                "studioModeState": {
+                  "owned": true,
+                  "niceName": "StudioModeState"
+                },
+                "replayBufferSaved": {
+                  "owned": true,
+                  "niceName": "ReplayBufferSaved"
+                },
+                "virtualcamState": {
+                  "owned": true,
+                  "niceName": "VirtualcamState"
+                },
+                "recordState": {
+                  "owned": true,
+                  "niceName": "RecordState"
+                }
+              },
+              "owned": true,
+              "niceName": "Merged"
+            },
+            "responses": {
+              "containers": {
+                "getSceneCollectionList": {
+                  "containers": {
+                    "sceneCollectionsList": {
+                      "owned": true,
+                      "niceName": "sceneCollections list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetSceneCollectionList"
+                },
+                "getReplayBufferStatus": {
+                  "owned": true,
+                  "niceName": "GetReplayBufferStatus"
+                },
+                "getProfileList": {
+                  "containers": {
+                    "profilesList": {
+                      "owned": true,
+                      "niceName": "profiles list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetProfileList"
+                },
+                "getGroupList": {
+                  "containers": {
+                    "groupsList": {
+                      "owned": true,
+                      "niceName": "groups list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetGroupList"
+                },
+                "getSceneList": {
+                  "owned": true,
+                  "niceName": "GetSceneList"
+                },
+                "getCurrentPreviewScene": {
+                  "owned": true,
+                  "niceName": "GetCurrentPreviewScene"
+                },
+                "getTransitionKindList": {
+                  "containers": {
+                    "transitionKindsList": {
+                      "owned": true,
+                      "niceName": "transitionKinds list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetTransitionKindList"
+                },
+                "getStreamStatus": {
+                  "owned": true,
+                  "niceName": "GetStreamStatus"
+                },
+                "getVideoSettings": {
+                  "owned": true,
+                  "niceName": "GetVideoSettings"
+                },
+                "getStreamServiceSettings": {
+                  "owned": true,
+                  "niceName": "GetStreamServiceSettings"
+                },
+                "getCurrentSceneTransitionCursor": {
+                  "owned": true,
+                  "niceName": "GetCurrentSceneTransitionCursor"
+                },
+                "getCurrentSceneTransition": {
+                  "owned": true,
+                  "niceName": "GetCurrentSceneTransition"
+                },
+                "getSceneTransitionList": {
+                  "owned": true,
+                  "niceName": "GetSceneTransitionList"
+                },
+                "getStudioModeEnabled": {
+                  "owned": true,
+                  "niceName": "GetStudioModeEnabled"
+                },
+                "getMonitorList": {
+                  "owned": true,
+                  "niceName": "GetMonitorList"
+                },
+                "getRecordDirectory": {
+                  "owned": true,
+                  "niceName": "GetRecordDirectory"
+                },
+                "getSourceFilterKindList": {
+                  "containers": {
+                    "sourceFilterKindsList": {
+                      "owned": true,
+                      "niceName": "sourceFilterKinds list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetSourceFilterKindList"
+                },
+                "getStats": {
+                  "owned": true,
+                  "niceName": "GetStats"
+                },
+                "getHotkeyList": {
+                  "containers": {
+                    "hotkeysList": {
+                      "owned": true,
+                      "niceName": "hotkeys list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetHotkeyList"
+                },
+                "getSpecialInputs": {
+                  "owned": true,
+                  "niceName": "GetSpecialInputs"
+                },
+                "getLastReplayBufferReplay": {
+                  "owned": true,
+                  "niceName": "GetLastReplayBufferReplay"
+                },
+                "getVersion": {
+                  "containers": {
+                    "availableRequestsList": {
+                      "owned": true,
+                      "niceName": "availableRequests list"
+                    },
+                    "supportedImageFormatsList": {
+                      "owned": true,
+                      "niceName": "supportedImageFormats list"
+                    }
+                  },
+                  "owned": true,
+                  "niceName": "GetVersion"
+                },
+                "getVirtualCamStatus": {
+                  "owned": true,
+                  "niceName": "GetVirtualCamStatus"
+                },
+                "getOutputList": {
+                  "owned": true,
+                  "niceName": "GetOutputList"
+                },
+                "getCurrentProgramScene": {
+                  "owned": true,
+                  "niceName": "GetCurrentProgramScene"
+                },
+                "getRecordStatus": {
+                  "owned": true,
+                  "niceName": "GetRecordStatus"
+                },
+                "startRecord": {
+                  "owned": true,
+                  "niceName": "StartRecord"
+                }
+              },
+              "owned": true,
+              "niceName": "Responses"
+            },
+            "events": {
+              "containers": {
+                "recordStateChanged": {
+                  "owned": true,
+                  "niceName": "RecordStateChanged"
+                },
+                "exitStarted": {
+                  "owned": true,
+                  "niceName": "ExitStarted"
+                }
+              },
+              "owned": true,
+              "niceName": "Events"
+            }
+          }
+        }
       }
     ],
     "viewOffset": [
@@ -897,7 +1386,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.4827586114406586,
+                  "value": 0.6862596869468689,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -939,7 +1428,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.4827586114406586,
+                  "value": 0.6709424257278442,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1003,7 +1492,7 @@
             {
               "parameters": [
                 {
-                  "value": "18:24",
+                  "value": "13:34",
                   "controlAddress": "/tvText",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1021,7 +1510,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 3,
                   "minValue": 1.0,
                   "maxValue": 4.0,
                   "default": 0,
@@ -1043,7 +1532,7 @@
             {
               "parameters": [
                 {
-                  "value": 504.7999877929688,
+                  "value": 214.9333190917969,
                   "controlAddress": "/showCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1101,7 +1590,7 @@
             {
               "parameters": [
                 {
-                  "value": "Un.e h\u00e9ro.\u00efne c'est...",
+                  "value": "J'y ai fait face...",
                   "controlAddress": "/question",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1195,7 +1684,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 4,
                   "minValue": 1.0,
                   "maxValue": 4.0,
                   "default": 0,
@@ -1217,7 +1706,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 4,
                   "minValue": 1.0,
                   "maxValue": 10.0,
                   "default": 0,
@@ -1239,7 +1728,7 @@
             {
               "parameters": [
                 {
-                  "value": "Hero",
+                  "value": "Face",
                   "enumOptions": {
                     "Defi": "0",
                     "Face": "1",
@@ -1757,15 +2246,59 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.4827586114406586,
+                                "value": 0.6862596869468689,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.4827586114406586,
+                              "value": 0.6862596869468689,
                               "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "resolumePCRegie",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/composition/layers/1/transition/duration",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 0.6862596869468689,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Float",
+                            "param": {
+                              "value": 0.6862596869468689,
+                              "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput1/command/arguments/#1/#1"
                             },
                             "paramLink": {
                               "linkType": 1,
@@ -1945,14 +2478,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.4827586114406586,
+                                "value": 0.6709424257278442,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.4827586114406586,
+                              "value": 0.6709424257278442,
                               "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2922,7 +3455,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/active"
           }
         ],
@@ -3051,7 +3584,14 @@
                 ],
                 "items": [
                   {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
                     "niceName": "Consequence",
+                    "editorIsCollapsed": true,
                     "type": "Consequence",
                     "commandModule": "resolumePCRegie",
                     "commandPath": "Launch / Stop",
@@ -3089,7 +3629,14 @@
                         ],
                         "items": [
                           {
+                            "parameters": [
+                              {
+                                "value": false,
+                                "controlAddress": "/enabled"
+                              }
+                            ],
                             "niceName": "Consequence 1",
+                            "editorIsCollapsed": true,
                             "type": "Consequence",
                             "commandModule": "resolumePCRegie",
                             "commandPath": "Effects",
@@ -3128,7 +3675,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Un.e h\u00e9ro.\u00efne c'est...",
+                                    "value": "J'y ai fait face...",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/question/question",
@@ -3143,7 +3690,14 @@
                             }
                           },
                           {
+                            "parameters": [
+                              {
+                                "value": false,
+                                "controlAddress": "/enabled"
+                              }
+                            ],
                             "niceName": "Consequence 2",
+                            "editorIsCollapsed": true,
                             "type": "Consequence",
                             "commandModule": "resolumePCRegie",
                             "commandPath": "Launch / Stop",
@@ -4210,7 +4764,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 2,
+                                "value": 1,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -4218,7 +4772,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": 2,
+                              "value": 1,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#1/#1"
                             },
@@ -4230,7 +4784,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 4,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -4238,7 +4792,7 @@
                             "niceName": "#2",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 4,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#2/#1"
                             },
@@ -4250,7 +4804,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 4,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -4258,7 +4812,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 4,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#3/#1"
                             },
@@ -4551,8 +5105,8 @@
       }
     ],
     "viewOffset": [
-      -345,
-      -80
+      -190,
+      -236
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -4566,8 +5120,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        -345,
-        -80
+        -190,
+        -236
       ],
       "viewZoom": 1.0
     }
@@ -4590,7 +5144,7 @@
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 600.0,
+            "value": 485.0382080078125,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -7007,7 +7561,158 @@
                   {
                     "parameters": [
                       {
-                        "value": 93.52000427246094,
+                        "value": [
+                          0.2777764797210693,
+                          0.2028039246797562,
+                          0.06730588525533676,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 87.46666717529297,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4857070744037628,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Layer duration",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": 0.1000000014901161,
+                          "controlAddress": "/stagger"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Transition duration jardin",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/resolume/jardin1TransitionDuration",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.4827586114406586,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Transition duration Cours",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/resolume/cours1TransitionDuration",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.4827586114406586,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 89.86666870117188,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.803558886051178,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Street fds",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "resolumePCRegie",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 90.0,
                         "controlAddress": "/time"
                       },
                       {
@@ -7056,26 +7761,104 @@
                               }
                             }
                           }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": [
+                          0.2777764797210693,
+                          0.2028039246797562,
+                          0.06730588525533676,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 165.7999877929688,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4537070691585541,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Layer duration 1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": 0.1000000014901161,
+                          "controlAddress": "/stagger"
                         },
                         {
-                          "niceName": "Consequence 1",
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Transition duration jardin",
                           "type": "Consequence",
-                          "commandModule": "resolumePCRegie",
-                          "commandPath": "Launch / Stop",
-                          "commandType": "Launch Clip",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
                           "command": {
                             "parameters": [
                               {
-                                "value": "Clip",
-                                "controlAddress": "/level"
+                                "value": "/resolume/jardin1TransitionDuration",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.6862596869468689,
+                                "controlAddress": "/value"
                               }
                             ],
                             "paramLinks": {
-                            },
-                            "arguments": {
-                              "hideInEditor": true,
-                              "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Transition duration Cours",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/resolume/cours1TransitionDuration",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.6709424257278442,
+                                "controlAddress": "/value"
                               }
+                            ],
+                            "paramLinks": {
                             }
                           }
                         }
@@ -7090,7 +7873,7 @@
                   {
                     "parameters": [
                       {
-                        "value": 171.3333282470703,
+                        "value": 171.0,
                         "controlAddress": "/time"
                       },
                       {
@@ -7561,7 +8344,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       },
       {
         "parameters": [
@@ -8448,8 +9232,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       }
     ],
     "viewOffset": [
