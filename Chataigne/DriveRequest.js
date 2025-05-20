@@ -27,32 +27,45 @@ function init() {
 }
 
 function dataEvent(data, requestURL) {
+
+	goodDefi = [];
+	goodFace = [];
+	goodHero = [];
+
 	var lines = data.split("\n");
 	for (var i = 1; i < lines.length; i++) {
 		var line = lines[i].split("\t");
 		if (line[0] == "") continue;
-		goodDefi.push(line[2]);
-		goodFace.push(line[3]);
-		goodHero.push(line[4]);
+		goodDefi.push(line[0]);
+		goodFace.push(line[1]);
+		goodHero.push(line[2]);
 	}
+
+    script.log("Got " + goodDefi.length + " lines");
 }
 
 function setResponse(type, index, id)
 {
-	script.log(type);
+	if (type == 0) setDefi(index, id);
+	else if (type == 1) setFace(index, id);
+	else if (type == 2) setHero(index, id);
+    else script.log("Unknown ID: " + id);
 }
 
 function setDefi(index, id)
 {
+	script.log("Setting Defi: " + id + " :" + goodDefi[id - 1]);
 	reponseParams[index-1].set(goodDefi[id-1]);
 }
 
 function setFace(index, id)
 {
+    script.log("Setting Face: " + id + " :" + goodFace[id - 1]);
 	reponseParams[index-1].set(goodFace[id-1]);
 }
 
 function setHero(index, id)
 {
+    script.log("Setting Hero: " + id + " :" + goodHero[id - 1]);
 	reponseParams[index-1].set(goodHero[id-1]);
 }
