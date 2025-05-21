@@ -20,10 +20,8 @@ var reponse4Target = script.addTargetParameter("Reponse 4 ", "");
 var reponseParams = [];
 
 function init() {
-	reponseParams.push(reponse1Target.getTarget());
-	reponseParams.push(reponse2Target.getTarget());
-	reponseParams.push(reponse3Target.getTarget());
-	reponseParams.push(reponse4Target.getTarget());
+	
+	local.sendGET("pub?gid=945766716&single=true&output=tsv");
 }
 
 function dataEvent(data, requestURL) {
@@ -41,31 +39,37 @@ function dataEvent(data, requestURL) {
 		goodHero.push(line[2]);
 	}
 
-    script.log("Got " + goodDefi.length + " lines");
+	//reinit response params
+	responseParams = [];
+	reponseParams.push(reponse1Target.getTarget());
+	reponseParams.push(reponse2Target.getTarget());
+	reponseParams.push(reponse3Target.getTarget());
+	reponseParams.push(reponse4Target.getTarget());
+
+
+	script.log("Got :", goodDefi.length + " defis", goodFace.length + " faces", goodHero.length + " heroes");
 }
 
-function setResponse(type, index, id)
-{
+function setResponse(type, index, id) {
 	if (type == 0) setDefi(index, id);
 	else if (type == 1) setFace(index, id);
 	else if (type == 2) setHero(index, id);
-    else script.log("Unknown ID: " + id);
+	else script.log("Unknown ID: " + id);
 }
 
-function setDefi(index, id)
-{
-	script.log("Setting Defi: " + id + " :" + goodDefi[id - 1]);
-	reponseParams[index-1].set(goodDefi[id-1]);
+function setDefi(index, id) {
+	script.log("Setting Defi " + id + " at clip " + index + " :" + goodDefi[id - 1]);
+
+	reponseParams[index - 1].set(goodDefi[id - 1]);
 }
 
-function setFace(index, id)
-{
-    script.log("Setting Face: " + id + " :" + goodFace[id - 1]);
-	reponseParams[index-1].set(goodFace[id-1]);
+function setFace(index, id) {
+	script.log("Setting Face " + id + " at clip " + index + " :" + goodFace[id - 1]);
+
+	reponseParams[index - 1].set(goodFace[id - 1]);
 }
 
-function setHero(index, id)
-{
-    script.log("Setting Hero: " + id + " :" + goodHero[id - 1]);
-	reponseParams[index-1].set(goodHero[id-1]);
+function setHero(index, id) {
+	script.log("Setting Hero " + id + " at clip " + index + " :" + goodHero[id - 1]);
+	reponseParams[index - 1].set(goodHero[id - 1]);
 }
