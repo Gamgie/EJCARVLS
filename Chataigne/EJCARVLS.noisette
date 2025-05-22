@@ -203,19 +203,19 @@
             {
               "type": 1,
               "width": 1920,
-              "height": 518,
+              "height": 630,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 307,
-                  "height": 518,
+                  "height": 630,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 307,
-                      "height": 364,
+                      "height": 319,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -226,7 +226,7 @@
                     {
                       "type": 0,
                       "width": 307,
-                      "height": 148,
+                      "height": 305,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -238,8 +238,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 707,
-                  "height": 518,
+                  "width": 1046,
+                  "height": 630,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -258,8 +258,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 894,
-                  "height": 518,
+                  "width": 555,
+                  "height": 630,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -272,13 +272,13 @@
             {
               "type": 1,
               "width": 1920,
-              "height": 464,
+              "height": 352,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 464,
+                  "height": 352,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -289,7 +289,7 @@
                 {
                   "type": 0,
                   "width": 1256,
-                  "height": 464,
+                  "height": 352,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -300,7 +300,7 @@
                 {
                   "type": 0,
                   "width": 474,
-                  "height": 464,
+                  "height": 352,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -371,6 +371,12 @@
         }
       },
       {
+        "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          }
+        ],
         "niceName": "Sound Card",
         "type": "Sound Card",
         "scripts": {
@@ -383,7 +389,7 @@
         "params": {
           "parameters": [
             {
-              "value": 2.56,
+              "value": 1.823808908462524,
               "controlAddress": "/outVolume"
             }
           ],
@@ -473,7 +479,7 @@
           ],
           "viewZoom": 1.0
         },
-        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"Windows Audio\" audioOutputDeviceName=\"Speakers (Scarlett 18i20 USB)\"\r\n             audioInputDeviceName=\"\" audioDeviceRate=\"44100.0\" audioDeviceBufferSize=\"480\"\r\n             audioDeviceOutChans=\"1111111111\"/>\r\n",
+        "audioSettings": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<DEVICESETUP deviceType=\"ASIO\" audioOutputDeviceName=\"Focusrite USB ASIO\"\r\n             audioInputDeviceName=\"Focusrite USB ASIO\" audioDeviceRate=\"48000.0\"\r\n             audioDeviceOutChans=\"1111111111\"/>\r\n",
         "analyzer": {
           "parameters": [
             {
@@ -705,7 +711,7 @@
               "controlAddress": "/mode"
             },
             {
-              "value": 7.0,
+              "value": 5.0,
               "controlAddress": "/time"
             }
           ]
@@ -1368,6 +1374,28 @@
         },
         "values": {
         }
+      },
+      {
+        "niceName": "Time",
+        "type": "Time",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "hideInEditor": true
+        },
+        "templates": {
+          "hideInEditor": true,
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
       }
     ],
     "viewOffset": [
@@ -1592,38 +1620,17 @@
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
-                  "controlAddress": "/jardin1TransitionDuration",
+                  "controlAddress": "/jardinTransitionDuration",
                   "feedbackOnly": false,
                   "type": "Float",
-                  "niceName": "Jardin 1 Transition Duration",
+                  "niceName": "Jardin Transition Duration",
                   "customizable": true,
                   "removable": false,
                   "description": "Custom control of type Float",
                   "hideInEditor": false
                 }
               ],
-              "niceName": "Jardin 1 Transition Duration",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": 0.1965216100215912,
-                  "minValue": 0,
-                  "maxValue": 1,
-                  "default": 0.0,
-                  "controlAddress": "/jardin2TransitionDuration",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "Jardin 2 Transition Duration",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "Jardin 2 Transition Duration",
+              "niceName": "Jardin Transition Duration",
               "editorIsCollapsed": true,
               "type": "Float Parameter"
             },
@@ -1634,38 +1641,17 @@
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
-                  "controlAddress": "/cours1TransitionDuration",
+                  "controlAddress": "/coursTransitionDuration",
                   "feedbackOnly": false,
                   "type": "Float",
-                  "niceName": "Cours 1 Transition Duration",
+                  "niceName": "Cours Transition Duration",
                   "customizable": true,
                   "removable": false,
                   "description": "Custom control of type Float",
                   "hideInEditor": false
                 }
               ],
-              "niceName": "Cours 1 Transition Duration",
-              "editorIsCollapsed": true,
-              "type": "Float Parameter"
-            },
-            {
-              "parameters": [
-                {
-                  "value": 0.2074625492095947,
-                  "minValue": 0,
-                  "maxValue": 1,
-                  "default": 0.0,
-                  "controlAddress": "/cours2TransitionDuration",
-                  "feedbackOnly": false,
-                  "type": "Float",
-                  "niceName": "Cours 2 Transition Duration",
-                  "customizable": true,
-                  "removable": false,
-                  "description": "Custom control of type Float",
-                  "hideInEditor": false
-                }
-              ],
-              "niceName": "Cours 2 Transition Duration",
+              "niceName": "Cours Transition Duration",
               "editorIsCollapsed": true,
               "type": "Float Parameter"
             },
@@ -1715,7 +1701,7 @@
             {
               "parameters": [
                 {
-                  "value": "02:54",
+                  "value": "01:47",
                   "controlAddress": "/tvText",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1773,7 +1759,7 @@
             {
               "parameters": [
                 {
-                  "value": 174.3800048828125,
+                  "value": 107.8999938964844,
                   "controlAddress": "/interCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1831,7 +1817,7 @@
             {
               "parameters": [
                 {
-                  "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
+                  "value": "\u00catre humble, humain, aider les autres au risque de sa vie. \r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse1",
                   "feedbackOnly": false,
@@ -1850,7 +1836,7 @@
             {
               "parameters": [
                 {
-                  "value": "Un h\u00e9ros aujourd\u2019hui, c'est celui ou celle qui r\u00e9ussit \u00e0 vivre le plus dignement possible au quotidien malgr\u00e9 toutes les difficult\u00e9s. Dans la joie, la bonne humeur et dans l'amour de son prochain. \r",
+                  "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse2",
                   "feedbackOnly": false,
@@ -1869,7 +1855,7 @@
             {
               "parameters": [
                 {
-                  "value": "C'est quelqu'un qui incarne des valeurs, qui aide \u00e0 tenir debout et qui inspire. \u00c7a peut aussi \u00eatre soi-m\u00eame, en combattant ce que personne d'autre ne voit. Salom\u00e9\r",
+                  "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse3",
                   "feedbackOnly": false,
@@ -1888,7 +1874,7 @@
             {
               "parameters": [
                 {
-                  "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
+                  "value": "Une personne \u00e9quilibr\u00e9e, sans addictions n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse4",
                   "feedbackOnly": false,
@@ -1929,7 +1915,7 @@
             {
               "parameters": [
                 {
-                  "value": 5,
+                  "value": 7,
                   "minValue": 1.0,
                   "maxValue": 10.0,
                   "default": 0,
@@ -2039,7 +2025,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 255.0,
                   "minValue": 0.0,
                   "maxValue": 255.0,
                   "default": 0.0,
@@ -2054,6 +2040,48 @@
                 }
               ],
               "niceName": "LED stripes Exit",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 255.0,
+                  "minValue": 0.0,
+                  "maxValue": 255.0,
+                  "default": 0.0,
+                  "controlAddress": "/lampadaire",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "Lampadaire",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "Lampadaire",
+              "editorIsCollapsed": true,
+              "type": "Float Parameter"
+            },
+            {
+              "parameters": [
+                {
+                  "value": 204.1601257324219,
+                  "minValue": 0.0,
+                  "maxValue": 255.0,
+                  "default": 0.0,
+                  "controlAddress": "/sas",
+                  "feedbackOnly": false,
+                  "type": "Float",
+                  "niceName": "SAS",
+                  "customizable": true,
+                  "removable": false,
+                  "description": "Custom control of type Float",
+                  "hideInEditor": false
+                }
+              ],
+              "niceName": "SAS",
               "editorIsCollapsed": true,
               "type": "Float Parameter"
             }
@@ -2261,7 +2289,9 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": "/composition/layers/5/clips/1/video/source/textgenerator/opacity",
+                          "value": "/composition/layers/6/clips/1/video/source/textgenerator/opacity",
+                          "controlMode": 1,
+                          "expression": "\"/composition/layers/\"+root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+\"/clips/1/video/source/textgenerator/opacity\"",
                           "controlAddress": "/address"
                         }
                       ],
@@ -2355,7 +2385,9 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": "/composition/layers/6/clips/1/video/source/textgenerator/opacity",
+                          "value": "/composition/layers/7/clips/1/video/source/textgenerator/opacity",
+                          "controlMode": 1,
+                          "expression": "\"/composition/layers/\"+(root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1)+\"/clips/1/video/source/textgenerator/opacity\"",
                           "controlAddress": "/address"
                         }
                       ],
@@ -2501,7 +2533,7 @@
                   {
                     "parameters": [
                       {
-                        "value": "/customVariables/customVariables/values/resolume/jardin1TransitionDuration",
+                        "value": "/customVariables/customVariables/values/resolume/jardinTransitionDuration",
                         "controlAddress": "/inputValue"
                       }
                     ],
@@ -2581,13 +2613,13 @@
                   {
                     "niceName": "MappingOutput 1",
                     "type": "BaseItem",
-                    "commandModule": "resolumePCRegie",
+                    "commandModule": "resolume",
                     "commandPath": "",
                     "commandType": "Custom Message",
                     "command": {
                       "parameters": [
                         {
-                          "value": "/composition/layers/1/transition/duration",
+                          "value": "/composition/layers/2/transition/duration",
                           "controlAddress": "/address"
                         }
                       ],
@@ -2621,59 +2653,9 @@
                         "viewZoom": 1.0
                       }
                     }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
-              "niceName": "Jardin 2 Transition Duration",
-              "editorIsCollapsed": true,
-              "type": "Mapping",
-              "im": {
-                "items": [
+                  },
                   {
-                    "parameters": [
-                      {
-                        "value": "/customVariables/customVariables/values/resolume/jardin2TransitionDuration",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value",
-                    "type": "Input Value"
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "params": {
-                "parameters": [
-                  {
-                    "value": 50,
-                    "hexMode": false,
-                    "controlAddress": "/updateRate"
-                  }
-                ],
-                "editorIsCollapsed": true
-              },
-              "filters": {
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "outputs": {
-                "items": [
-                  {
-                    "niceName": "MappingOutput",
+                    "niceName": "MappingOutput 2",
                     "type": "BaseItem",
                     "commandModule": "resolume",
                     "commandPath": "",
@@ -2681,7 +2663,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": "/composition/layers/2/transition/duration",
+                          "value": "/composition/layers/3/transition/duration",
                           "controlAddress": "/address"
                         }
                       ],
@@ -2692,15 +2674,15 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.1965216100215912,
+                                "value": 0.1800267994403839,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.1965216100215912,
-                              "controlAddress": "/states/resolume/processors/jardin2TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
+                              "value": 0.1800267994403839,
+                              "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput2/command/arguments/#1/#1"
                             },
                             "paramLink": {
                               "linkType": 1,
@@ -2733,101 +2715,7 @@
                   {
                     "parameters": [
                       {
-                        "value": "/customVariables/customVariables/values/resolume/cours1TransitionDuration",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value",
-                    "type": "Input Value"
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "params": {
-                "parameters": [
-                  {
-                    "value": 50,
-                    "hexMode": false,
-                    "controlAddress": "/updateRate"
-                  }
-                ],
-                "editorIsCollapsed": true
-              },
-              "filters": {
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "outputs": {
-                "items": [
-                  {
-                    "niceName": "MappingOutput",
-                    "type": "BaseItem",
-                    "commandModule": "resolume",
-                    "commandPath": "",
-                    "commandType": "Custom Message",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/composition/layers/5/transition/duration",
-                          "controlAddress": "/address"
-                        }
-                      ],
-                      "paramLinks": {
-                      },
-                      "argManager": {
-                        "items": [
-                          {
-                            "parameters": [
-                              {
-                                "value": 0.2198335826396942,
-                                "controlAddress": "/#1"
-                              }
-                            ],
-                            "niceName": "#1",
-                            "type": "Float",
-                            "param": {
-                              "value": 0.2198335826396942,
-                              "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
-                            },
-                            "paramLink": {
-                              "linkType": 1,
-                              "mappingValueIndex": 0
-                            }
-                          }
-                        ],
-                        "viewOffset": [
-                          0,
-                          0
-                        ],
-                        "viewZoom": 1.0
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
-              "niceName": "Cours 2 Transition Duration",
-              "editorIsCollapsed": true,
-              "type": "Mapping",
-              "im": {
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": "/customVariables/customVariables/values/resolume/cours2TransitionDuration",
+                        "value": "/customVariables/customVariables/values/resolume/coursTransitionDuration",
                         "controlAddress": "/inputValue"
                       }
                     ],
@@ -2870,6 +2758,8 @@
                       "parameters": [
                         {
                           "value": "/composition/layers/6/transition/duration",
+                          "controlMode": 1,
+                          "expression": "\"/composition/layers/\"+root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+\"/transition/duration\"",
                           "controlAddress": "/address"
                         }
                       ],
@@ -2880,15 +2770,107 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.2074625492095947,
+                                "value": 0.2198335826396942,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.2074625492095947,
-                              "controlAddress": "/states/resolume/processors/cours2TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
+                              "value": 0.2198335826396942,
+                              "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MappingOutput 1",
+                    "type": "BaseItem",
+                    "commandModule": "resolume",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/composition/layers/7/transition/duration",
+                          "controlMode": 1,
+                          "expression": "\"/composition/layers/\"+(root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1)+\"/transition/duration\"",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 0.2198335826396942,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Float",
+                            "param": {
+                              "value": 0.2198335826396942,
+                              "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput1/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "MappingOutput 2",
+                    "type": "BaseItem",
+                    "commandModule": "resolume",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/composition/layers/8/transition/duration",
+                          "controlMode": 1,
+                          "expression": "\"/composition/layers/\"+(root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2)+\"/transition/duration\"",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 0.2198335826396942,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Float",
+                            "param": {
+                              "value": 0.2198335826396942,
+                              "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput2/command/arguments/#1/#1"
                             },
                             "paramLink": {
                               "linkType": 1,
@@ -3961,7 +3943,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
@@ -4384,7 +4366,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
+                                    "value": "\u00catre humble, humain, aider les autres au risque de sa vie. \r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse1/reponse1",
@@ -4591,7 +4573,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Un h\u00e9ros aujourd\u2019hui, c'est celui ou celle qui r\u00e9ussit \u00e0 vivre le plus dignement possible au quotidien malgr\u00e9 toutes les difficult\u00e9s. Dans la joie, la bonne humeur et dans l'amour de son prochain. \r",
+                                    "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse2/reponse2",
@@ -4802,7 +4784,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "C'est quelqu'un qui incarne des valeurs, qui aide \u00e0 tenir debout et qui inspire. \u00c7a peut aussi \u00eatre soi-m\u00eame, en combattant ce que personne d'autre ne voit. Salom\u00e9\r",
+                                    "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse3/reponse3",
@@ -4946,7 +4928,9 @@
                           "controlAddress": "/level"
                         },
                         {
-                          "value": 7,
+                          "value": 8,
+                          "controlMode": 1,
+                          "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2",
                           "hexMode": false,
                           "controlAddress": "/layer"
                         }
@@ -4984,7 +4968,9 @@
                                   "controlAddress": "/level"
                                 },
                                 {
-                                  "value": 7,
+                                  "value": 8,
+                                  "controlMode": 1,
+                                  "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2",
                                   "hexMode": false,
                                   "controlAddress": "/layer"
                                 },
@@ -5011,7 +4997,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
+                                    "value": "Une personne \u00e9quilibr\u00e9e, sans addictions n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse4/reponse4",
@@ -5038,7 +5024,9 @@
                                   "controlAddress": "/level"
                                 },
                                 {
-                                  "value": 7,
+                                  "value": 8,
+                                  "controlMode": 1,
+                                  "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2",
                                   "hexMode": false,
                                   "controlAddress": "/layer"
                                 },
@@ -5355,7 +5343,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 5,
+                                "value": 7,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5363,7 +5351,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 5,
+                              "value": 7,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#3/#1"
                             },
@@ -6090,7 +6078,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/enabled"
                       }
                     ],
@@ -6152,8 +6140,395 @@
                         }
                       }
                     }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "7 WW",
+                    "editorIsCollapsed": true,
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 226,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "7 CW",
+                    "editorIsCollapsed": true,
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 227,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/enabled"
+                      }
+                    ],
+                    "niceName": "6 WW",
+                    "editorIsCollapsed": true,
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 231,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
                   }
                 ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "lampadaire",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/light/lampadaire",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 2,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "SAS",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/customVariables/customVariables/values/light/sas",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 1,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": false,
+            "controlAddress": "/miniMode"
+          },
+          {
+            "value": [
+              -925.0,
+              -146.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              411.0,
+              202.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "Start Show",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Start show at 20:40",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/time/values/fullDayTime",
+                        "controlAddress": "/inputValue"
+                      },
+                      {
+                        "value": true,
+                        "controlAddress": "/alwaysTrigger"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value",
+                    "comparator": {
+                      "parameters": [
+                        {
+                          "value": "=",
+                          "controlAddress": "/comparisonFunction"
+                        },
+                        {
+                          "value": 74400.0,
+                          "controlAddress": "/reference"
+                        }
+                      ],
+                      "hideInEditor": true
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "parameters": [
+                  {
+                    "value": 0.2000000029802322,
+                    "controlAddress": "/stagger"
+                  },
+                  {
+                    "value": false,
+                    "controlAddress": "/cancelDelaysOnTrigger"
+                  }
+                ],
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "sequences",
+                    "commandPath": "Playback",
+                    "commandType": "Stop All Sequences",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  },
+                  {
+                    "niceName": "Consequence 1",
+                    "type": "Consequence",
+                    "commandModule": "sequences",
+                    "commandPath": "Playback",
+                    "commandType": "Play Sequence",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/sequences/show",
+                          "controlAddress": "/target"
+                        },
+                        {
+                          "value": true,
+                          "controlAddress": "/playFromStart"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
                 "viewOffset": [
                   0,
                   0
@@ -6171,8 +6546,8 @@
       }
     ],
     "viewOffset": [
-      68,
-      -371
+      -87,
+      -296
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -6186,8 +6561,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        68,
-        -371
+        -87,
+        -296
       ],
       "viewZoom": 1.0
     }
@@ -6197,7 +6572,11 @@
       {
         "parameters": [
           {
-            "value": 610.0,
+            "value": true,
+            "controlAddress": "/enabled"
+          },
+          {
+            "value": 611.7666666666667,
             "controlAddress": "/totalTime"
           },
           {
@@ -6210,7 +6589,7 @@
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 288.7664184570312,
+            "value": 156.5426483154297,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -6229,6 +6608,10 @@
                 {
                   "value": 153.0,
                   "controlAddress": "/listSize"
+                },
+                {
+                  "value": false,
+                  "controlAddress": "/locked"
                 },
                 {
                   "value": 153,
@@ -6340,7 +6723,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -6369,7 +6752,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -6745,7 +7128,7 @@
                   {
                     "parameters": [
                       {
-                        "value": false,
+                        "value": true,
                         "controlAddress": "/locked"
                       },
                       {
@@ -6814,6 +7197,52 @@
                           }
                         },
                         {
+                          "niceName": "Consequence 5",
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "",
+                          "commandType": "Custom Message",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/composition/layers/2/video/opacity",
+                                "controlAddress": "/address"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "argManager": {
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 0.5,
+                                      "minValue": 0,
+                                      "maxValue": 1,
+                                      "default": 0.0,
+                                      "controlAddress": "/#1"
+                                    }
+                                  ],
+                                  "niceName": "#1",
+                                  "type": "Float",
+                                  "param": {
+                                    "value": 0.5,
+                                    "minValue": 0,
+                                    "maxValue": 1,
+                                    "default": 0.0,
+                                    "controlAddress": "/sequences/show/layers/show/triggers/layerBlend1/consequences/consequence5/command/arguments/#1/#1"
+                                  }
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            }
+                          }
+                        },
+                        {
                           "niceName": "Consequence 1",
                           "type": "Consequence",
                           "commandModule": "resolume",
@@ -6822,7 +7251,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/composition/layers/3/video/opacity",
+                                "value": "/composition/layers/1/video/opacity",
                                 "controlAddress": "/address"
                               }
                             ],
@@ -6944,6 +7373,54 @@
                                     "maxValue": 1,
                                     "default": 0.0,
                                     "controlAddress": "/sequences/show/layers/show/triggers/layerBlend1/consequences/consequence3/command/arguments/#1/#1"
+                                  }
+                                }
+                              ],
+                              "viewOffset": [
+                                0,
+                                0
+                              ],
+                              "viewZoom": 1.0
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence 4",
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "",
+                          "commandType": "Custom Message",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/composition/layers/6/video/opacity",
+                                "controlMode": 1,
+                                "expression": "\"/composition/layers/\"+(root.customVariables.resolume.variables.layer1Cours.layer1Cours.get())+\"/video/opacity\"",
+                                "controlAddress": "/address"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "argManager": {
+                              "items": [
+                                {
+                                  "parameters": [
+                                    {
+                                      "value": 0.5,
+                                      "minValue": 0,
+                                      "maxValue": 1,
+                                      "default": 0.0,
+                                      "controlAddress": "/#1"
+                                    }
+                                  ],
+                                  "niceName": "#1",
+                                  "type": "Float",
+                                  "param": {
+                                    "value": 0.5,
+                                    "minValue": 0,
+                                    "maxValue": 1,
+                                    "default": 0.0,
+                                    "controlAddress": "/sequences/show/layers/show/triggers/layerBlend1/consequences/consequence4/command/arguments/#1/#1"
                                   }
                                 }
                               ],
@@ -7392,6 +7869,105 @@
                         "controlAddress": "/enabled"
                       },
                       {
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 18.45332717895508,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.7998119592666626,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Reset lumi\u00e8reopacity",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": 0.1000000014901161,
+                          "controlAddress": "/stagger"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Reset Opacity",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/resolume/lumireOpacity",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.04559270665049553,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Reset Opacity 1",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Set Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/resolume/lumireOpacity",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/enabled"
+                      },
+                      {
                         "value": true,
                         "controlAddress": "/locked"
                       },
@@ -7567,6 +8143,40 @@
                             "paramLinks": {
                             }
                           }
+                        },
+                        {
+                          "niceName": "Clip 1 2",
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
+                                "hexMode": false,
+                                "controlAddress": "/layer"
+                              },
+                              {
+                                "value": 1,
+                                "hexMode": false,
+                                "controlAddress": "/clip"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
                         }
                       ],
                       "viewOffset": [
@@ -7630,7 +8240,7 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 0.7000002264976501,
+                                "value": 0.0,
                                 "controlAddress": "/time"
                               },
                               {
@@ -7746,15 +8356,15 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 22.91999626159668,
+                        "value": 23.26000022888184,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.8749999403953552,
+                        "value": 0.6410920023918152,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Reset lumi\u00e8reopacity",
+                    "niceName": "Show lumi\u00e8re",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -7769,11 +8379,52 @@
                       ],
                       "items": [
                         {
-                          "niceName": "Reset Opacity",
+                          "parameters": [
+                            {
+                              "value": false,
+                              "controlAddress": "/enabled"
+                            }
+                          ],
+                          "niceName": "Clip 1 1",
+                          "editorIsCollapsed": true,
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
+                                "hexMode": false,
+                                "controlAddress": "/layer"
+                              },
+                              {
+                                "value": 1,
+                                "hexMode": false,
+                                "controlAddress": "/clip"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Fade in text",
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
-                          "commandType": "Set Value",
+                          "commandType": "Go to Value",
                           "command": {
                             "parameters": [
                               {
@@ -7789,10 +8440,99 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 0.0,
+                                "value": 3.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 1.0,
                                 "controlAddress": "/value"
                               }
                             ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
                             "paramLinks": {
                             }
                           }
@@ -7984,15 +8724,15 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 26.59333419799805,
+                        "value": 26.84665298461914,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7012423872947693,
+                        "value": 0.03922125697135925,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Show lumi\u00e8re",
+                    "niceName": "Reset voyage opacity 1",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -8007,41 +8747,7 @@
                       ],
                       "items": [
                         {
-                          "niceName": "Clip 1 1",
-                          "type": "Consequence",
-                          "commandModule": "resolume",
-                          "commandPath": "Launch / Stop",
-                          "commandType": "Launch Clip",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "Clip",
-                                "controlAddress": "/level"
-                              },
-                              {
-                                "value": 7,
-                                "controlMode": 1,
-                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
-                                "hexMode": false,
-                                "controlAddress": "/layer"
-                              },
-                              {
-                                "value": 1,
-                                "hexMode": false,
-                                "controlAddress": "/clip"
-                              }
-                            ],
-                            "paramLinks": {
-                            },
-                            "arguments": {
-                              "hideInEditor": true,
-                              "paramLinks": {
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Fade in text",
+                          "niceName": "Reset Opacity 1",
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -8049,7 +8755,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/lumireOpacity",
+                                "value": "/resolume/voyageOpacity",
                                 "controlAddress": "/target"
                               },
                               {
@@ -8061,12 +8767,8 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 3.0,
+                                "value": 0.0,
                                 "controlAddress": "/time"
-                              },
-                              {
-                                "value": 1.0,
-                                "controlAddress": "/value"
                               }
                             ],
                             "containers": {
@@ -8173,19 +8875,19 @@
                         "controlAddress": "/enabled"
                       },
                       {
-                        "value": false,
+                        "value": true,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 27.41332054138184,
+                        "value": 27.61333084106445,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.05425885319709778,
+                        "value": 0.7813527584075928,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Reset voyage opacity 1",
+                    "niceName": "Reset lumi\u00e8re opacity 1",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -8200,7 +8902,7 @@
                       ],
                       "items": [
                         {
-                          "niceName": "Reset Opacity 1",
+                          "niceName": "Reset Opacity",
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -8208,7 +8910,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/voyageOpacity",
+                                "value": "/resolume/lumireOpacity",
                                 "controlAddress": "/target"
                               },
                               {
@@ -8220,8 +8922,12 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 0.6999997496604919,
+                                "value": 0.9999998807907104,
                                 "controlAddress": "/time"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/value"
                               }
                             ],
                             "containers": {
@@ -8341,7 +9047,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 29.47332572937012,
+                        "value": 28.07332611083984,
                         "controlAddress": "/time"
                       },
                       {
@@ -8568,7 +9274,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -8597,7 +9303,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -8720,165 +9426,6 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 31.27999496459961,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.8039091229438782,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Reset lumi\u00e8re opacity 1",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "parameters": [
-                        {
-                          "value": 0.1000000014901161,
-                          "controlAddress": "/stagger"
-                        },
-                        {
-                          "value": false,
-                          "controlAddress": "/cancelDelaysOnTrigger"
-                        }
-                      ],
-                      "items": [
-                        {
-                          "niceName": "Reset Opacity",
-                          "type": "Consequence",
-                          "commandModule": "customVariables",
-                          "commandPath": "",
-                          "commandType": "Go to Value",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/resolume/lumireOpacity",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": "All",
-                                "controlAddress": "/component"
-                              },
-                              {
-                                "value": "Equals",
-                                "controlAddress": "/operator"
-                              },
-                              {
-                                "value": 0.9999998807907104,
-                                "controlAddress": "/time"
-                              },
-                              {
-                                "value": 0.0,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "containers": {
-                              "curve": {
-                                "parameters": [
-                                  {
-                                    "value": 1.0,
-                                    "controlAddress": "/length"
-                                  },
-                                  {
-                                    "value": [
-                                      0.0,
-                                      1.0
-                                    ],
-                                    "controlAddress": "/viewValueRange"
-                                  },
-                                  {
-                                    "value": [
-                                      0.0,
-                                      1.0
-                                    ],
-                                    "controlAddress": "/range",
-                                    "enabled": true
-                                  }
-                                ],
-                                "hideInRemoteControl": false,
-                                "items": [
-                                  {
-                                    "parameters": [
-                                      {
-                                        "value": "Bezier",
-                                        "controlAddress": "/easingType"
-                                      }
-                                    ],
-                                    "niceName": "Key",
-                                    "containers": {
-                                      "easing": {
-                                        "parameters": [
-                                          {
-                                            "value": [
-                                              0.300000011920929,
-                                              0.0
-                                            ],
-                                            "controlAddress": "/anchor1"
-                                          },
-                                          {
-                                            "value": [
-                                              -0.300000011920929,
-                                              0.0
-                                            ],
-                                            "controlAddress": "/anchor2"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    "type": "Key"
-                                  },
-                                  {
-                                    "parameters": [
-                                      {
-                                        "value": 1.0,
-                                        "controlAddress": "/position"
-                                      },
-                                      {
-                                        "value": 1.0,
-                                        "controlAddress": "/value"
-                                      },
-                                      {
-                                        "value": "Bezier",
-                                        "controlAddress": "/easingType"
-                                      }
-                                    ],
-                                    "niceName": "Key 1",
-                                    "containers": {
-                                      "easing": {
-                                      }
-                                    },
-                                    "type": "Key"
-                                  }
-                                ],
-                                "viewOffset": [
-                                  0,
-                                  0
-                                ],
-                                "viewZoom": 1.0
-                              }
-                            },
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": true,
-                        "controlAddress": "/enabled"
-                      },
-                      {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
                         "value": [
                           0.3137255012989044,
                           0.3450980484485626,
@@ -8888,7 +9435,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 35.21999359130859,
+                        "value": 33.35332870483398,
                         "controlAddress": "/time"
                       },
                       {
@@ -9083,7 +9630,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -9112,7 +9659,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -9147,7 +9694,7 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 89.86666870117188,
+                        "value": 89.66667175292969,
                         "controlAddress": "/time"
                       },
                       {
@@ -9307,7 +9854,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -9336,7 +9883,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -9375,7 +9922,7 @@
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.5310344696044922,
+                        "value": 0.7539352178573608,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -9583,11 +10130,15 @@
                   {
                     "parameters": [
                       {
-                        "value": 587.3333740234375,
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 582.7333984375,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.6713352203369141,
+                        "value": 0.641260027885437,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -9637,11 +10188,15 @@
                   {
                     "parameters": [
                       {
-                        "value": 592.2999877929688,
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 586.63330078125,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.3270922303199768,
+                        "value": 0.2519042491912842,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -9799,6 +10354,69 @@
                               }
                             },
                             "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 605.933349609375,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.2740781307220459,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "mentions",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
+                                "hexMode": false,
+                                "controlAddress": "/layer"
+                              },
+                              {
+                                "value": 21,
+                                "hexMode": false,
+                                "controlAddress": "/clip"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
                             }
                           }
                         }
@@ -10011,6 +10629,10 @@
                     "consequences": {
                       "parameters": [
                         {
+                          "value": 15.0,
+                          "controlAddress": "/stagger"
+                        },
+                        {
                           "value": false,
                           "controlAddress": "/cancelDelaysOnTrigger"
                         }
@@ -10018,6 +10640,7 @@
                       "items": [
                         {
                           "niceName": "Consequence",
+                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -10136,6 +10759,7 @@
                         },
                         {
                           "niceName": "Consequence 1",
+                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -10530,7 +11154,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 A-1.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 A-1.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -10595,7 +11219,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 B-2.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 B-2.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -10660,7 +11284,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 C-3.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 C-3.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -10729,7 +11353,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 D-4.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 D-4.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -10798,7 +11422,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 E-5.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 E-5.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -10867,7 +11491,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 F-6.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 F-6.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -11005,7 +11629,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 H-8.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 H-8.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -11074,7 +11698,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 I-SUB 1.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 I-SUB 1.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -11143,7 +11767,7 @@
                         "controlAddress": "/startTime"
                       },
                       {
-                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SON V11/continu\u00e9 \u00e0 regarder vers le soleil V11 J-SUB2.wav",
+                        "value": "D:/Gamgie/Projects/Ultreia/Regarder le soleil/Github/EJCARVLS/Sound/EXPORTS SONS V12/continu\u00e9 \u00e0 regarder vers le soleil V12 J-SUB2.wav",
                         "controlAddress": "/filePath"
                       }
                     ],
@@ -11190,11 +11814,14 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       },
       {
         "parameters": [
+          {
+            "value": true,
+            "controlAddress": "/enabled"
+          },
           {
             "value": 590.0,
             "controlAddress": "/totalTime"
@@ -11204,7 +11831,7 @@
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 590.0,
+            "value": 67.44830322265625,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -11225,7 +11852,7 @@
                   "controlAddress": "/listSize"
                 },
                 {
-                  "value": false,
+                  "value": true,
                   "controlAddress": "/locked"
                 },
                 {
@@ -11279,7 +11906,6 @@
                       "items": [
                         {
                           "niceName": "Transition duration jardin 1",
-                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -11287,7 +11913,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -11308,38 +11934,7 @@
                           }
                         },
                         {
-                          "niceName": "Transition duration jardin 2",
-                          "editorIsCollapsed": true,
-                          "type": "Consequence",
-                          "commandModule": "customVariables",
-                          "commandPath": "",
-                          "commandType": "Set Value",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/resolume/jardin2TransitionDuration",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": "All",
-                                "controlAddress": "/component"
-                              },
-                              {
-                                "value": "Equals",
-                                "controlAddress": "/operator"
-                              },
-                              {
-                                "value": 0.1965216100215912,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
                           "niceName": "Transition duration Cours 1",
-                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -11347,7 +11942,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -11360,36 +11955,6 @@
                               },
                               {
                                 "value": 0.2198335826396942,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Transition duration Cours 2",
-                          "editorIsCollapsed": true,
-                          "type": "Consequence",
-                          "commandModule": "customVariables",
-                          "commandPath": "",
-                          "commandType": "Set Value",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/resolume/cours2TransitionDuration",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": "All",
-                                "controlAddress": "/component"
-                              },
-                              {
-                                "value": "Equals",
-                                "controlAddress": "/operator"
-                              },
-                              {
-                                "value": 0.2074625492095947,
                                 "controlAddress": "/value"
                               }
                             ],
@@ -11470,6 +12035,15 @@
                         "controlAddress": "/locked"
                       },
                       {
+                        "value": [
+                          0.2777764797210693,
+                          0.07692156732082367,
+                          0.1855372488498688,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
                         "value": 0.0,
                         "controlAddress": "/time"
                       },
@@ -11516,8 +12090,282 @@
                   {
                     "parameters": [
                       {
+                        "value": 1.940000534057617,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.2101449221372604,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "led stripes exit",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "led stripes exit on",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/ledStripesExit",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 255.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "lampadaire",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/lampadaire",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 255.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
                         "value": true,
                         "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.06730588525533676,
+                          0.2777764797210693,
+                          0.2371294051408768,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
                       },
                       {
                         "value": 4.099999904632568,
@@ -11639,9 +12487,9 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/composition/layers/68/video/opacity",
+                                "value": "/composition/layers/8/video/opacity",
                                 "controlMode": 1,
-                                "expression": "\"/composition/layers/\"+root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+8+\"/video/opacity\"",
+                                "expression": "\"/composition/layers/\"+(root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2)+\"/video/opacity\"",
                                 "controlAddress": "/address"
                               }
                             ],
@@ -11838,6 +12686,33 @@
                               }
                             }
                           }
+                        },
+                        {
+                          "niceName": "backhround fds",
+                          "type": "Consequence",
+                          "commandModule": "resolumePCRegie",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 3,
+                                "hexMode": false,
+                                "controlAddress": "/clip"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
                         }
                       ],
                       "viewOffset": [
@@ -11850,7 +12725,16 @@
                   {
                     "parameters": [
                       {
-                        "value": 10.0,
+                        "value": [
+                          0.2777764797210693,
+                          0.1213568598031998,
+                          0.01175294071435928,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 10.0600004196167,
                         "controlAddress": "/time"
                       },
                       {
@@ -11901,6 +12785,33 @@
                               }
                             }
                           }
+                        },
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "resolumePCRegie",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Launch Clip",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Clip",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 2,
+                                "hexMode": false,
+                                "controlAddress": "/layer"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
                         }
                       ],
                       "viewOffset": [
@@ -11913,19 +12824,15 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
-                        "value": 28.05999946594238,
+                        "value": 26.45999908447266,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.6132819652557373,
+                        "value": 0.3797468245029449,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Activate",
+                    "niceName": "Stop Mention",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -11938,17 +12845,29 @@
                         {
                           "niceName": "Consequence",
                           "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "State",
-                          "commandType": "Set State Activation",
+                          "commandModule": "resolume",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Stop Layer",
                           "command": {
                             "parameters": [
                               {
-                                "value": "/states/interperf",
-                                "controlAddress": "/target"
+                                "value": "Layer",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
+                                "hexMode": false,
+                                "controlAddress": "/layer"
                               }
                             ],
                             "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
                             }
                           }
                         }
@@ -11976,7 +12895,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 31.93999862670898,
+                        "value": 27.53999519348145,
                         "controlAddress": "/time"
                       },
                       {
@@ -12097,7 +13016,57 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 66.18000793457031,
+                        "value": 28.05999946594238,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.6132819652557373,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Activate",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "State",
+                          "commandType": "Set State Activation",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/interperf",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 192.7800140380859,
                         "controlAddress": "/time"
                       },
                       {
@@ -12271,7 +13240,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 6,
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12298,7 +13269,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 7,
+                                "value": 8,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12325,7 +13298,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 8,
+                                "value": 9,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+3",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12486,66 +13461,6 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 263.3599853515625,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.7721518874168396,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Stop Titre 1",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "parameters": [
-                        {
-                          "value": false,
-                          "controlAddress": "/cancelDelaysOnTrigger"
-                        }
-                      ],
-                      "items": [
-                        {
-                          "niceName": "titre 1",
-                          "type": "Consequence",
-                          "commandModule": "resolume",
-                          "commandPath": "Launch / Stop",
-                          "commandType": "Stop Layer",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "Layer",
-                                "controlAddress": "/level"
-                              },
-                              {
-                                "value": 4,
-                                "hexMode": false,
-                                "controlAddress": "/layer"
-                              }
-                            ],
-                            "paramLinks": {
-                            },
-                            "arguments": {
-                              "hideInEditor": true,
-                              "paramLinks": {
-                              }
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
                         "value": [
                           0.2777764797210693,
                           0.0,
@@ -12614,19 +13529,232 @@
                   {
                     "parameters": [
                       {
+                        "value": 301.8200073242188,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.4867914021015167,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "SAS",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enabled"
+                            }
+                          ],
+                          "niceName": "sas",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/sas",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 204.1601257324219,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 384.0599670410156,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.2381282448768616,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Stop Titre 1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "titre 1",
+                          "type": "Consequence",
+                          "commandModule": "resolume",
+                          "commandPath": "Launch / Stop",
+                          "commandType": "Stop Layer",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "Layer",
+                                "controlAddress": "/level"
+                              },
+                              {
+                                "value": 4,
+                                "hexMode": false,
+                                "controlAddress": "/layer"
+                              }
+                            ],
+                            "paramLinks": {
+                            },
+                            "arguments": {
+                              "hideInEditor": true,
+                              "paramLinks": {
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
                         "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 400.5400085449219,
+                        "value": 400.0599975585938,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.6705191731452942,
+                        "value": 0.7357365489006042,
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "Stop Composition 3",
+                    "niceName": "Stop Composition 2",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -12730,7 +13858,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 6,
+                                "value": 7,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+1",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12757,7 +13887,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 7,
+                                "value": 8,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+2",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12784,7 +13916,9 @@
                                 "controlAddress": "/level"
                               },
                               {
-                                "value": 8,
+                                "value": 9,
+                                "controlMode": 1,
+                                "expression": "root.customVariables.resolume.variables.layer1Cours.layer1Cours.get()+3",
                                 "hexMode": false,
                                 "controlAddress": "/layer"
                               }
@@ -12947,7 +14081,7 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 439.5,
+                        "value": 513.2999877929688,
                         "controlAddress": "/time"
                       },
                       {
@@ -13007,6 +14141,502 @@
                       {
                         "value": false,
                         "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 580.1400146484375,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Deactivate 1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "State",
+                          "commandType": "Set State Activation",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/interperf",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": false,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": 581.2999877929688,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.47826087474823,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "led stripes exit 1",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/ledStripesExit",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "lampadaire",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/lampadaire",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "sas",
+                          "type": "Consequence",
+                          "commandModule": "customVariables",
+                          "commandPath": "",
+                          "commandType": "Go to Value",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/light/sas",
+                                "controlAddress": "/target"
+                              },
+                              {
+                                "value": "All",
+                                "controlAddress": "/component"
+                              },
+                              {
+                                "value": "Equals",
+                                "controlAddress": "/operator"
+                              },
+                              {
+                                "value": 15.0,
+                                "controlAddress": "/time"
+                              },
+                              {
+                                "value": 0.0,
+                                "controlAddress": "/value"
+                              }
+                            ],
+                            "containers": {
+                              "curve": {
+                                "parameters": [
+                                  {
+                                    "value": 1.0,
+                                    "controlAddress": "/length"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/viewValueRange"
+                                  },
+                                  {
+                                    "value": [
+                                      0.0,
+                                      1.0
+                                    ],
+                                    "controlAddress": "/range",
+                                    "enabled": true
+                                  }
+                                ],
+                                "hideInRemoteControl": false,
+                                "items": [
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key",
+                                    "containers": {
+                                      "easing": {
+                                        "parameters": [
+                                          {
+                                            "value": [
+                                              0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor1"
+                                          },
+                                          {
+                                            "value": [
+                                              -0.300000011920929,
+                                              0.0
+                                            ],
+                                            "controlAddress": "/anchor2"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    "type": "Key"
+                                  },
+                                  {
+                                    "parameters": [
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/position"
+                                      },
+                                      {
+                                        "value": 1.0,
+                                        "controlAddress": "/value"
+                                      },
+                                      {
+                                        "value": "Bezier",
+                                        "controlAddress": "/easingType"
+                                      }
+                                    ],
+                                    "niceName": "Key 1",
+                                    "containers": {
+                                      "easing": {
+                                      }
+                                    },
+                                    "type": "Key"
+                                  }
+                                ],
+                                "viewOffset": [
+                                  0,
+                                  0
+                                ],
+                                "viewZoom": 1.0
+                              }
+                            },
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": true,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 586.0599365234375,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.8734177350997925,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Stop Composition",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence 2",
+                          "type": "Consequence",
+                          "commandModule": "stateMachine",
+                          "commandPath": "Action",
+                          "commandType": "Trigger Action",
+                          "command": {
+                            "parameters": [
+                              {
+                                "value": "/states/resolume/processors/stopComposition",
+                                "controlAddress": "/target"
+                              }
+                            ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.1324784308671951,
+                          0.1935921609401703,
+                          0.2777764797210693,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
                       },
                       {
                         "value": 586.52001953125,
@@ -13230,110 +14860,6 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 587.6400146484375,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.5698037147521973,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Deactivate 1",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "parameters": [
-                        {
-                          "value": false,
-                          "controlAddress": "/cancelDelaysOnTrigger"
-                        }
-                      ],
-                      "items": [
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "State",
-                          "commandType": "Set State Activation",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/interperf",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": false,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
-                        "value": 589.8599853515625,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.8734177350997925,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Stop Composition",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "parameters": [
-                        {
-                          "value": false,
-                          "controlAddress": "/cancelDelaysOnTrigger"
-                        }
-                      ],
-                      "items": [
-                        {
-                          "niceName": "Consequence 2",
-                          "type": "Consequence",
-                          "commandModule": "stateMachine",
-                          "commandPath": "Action",
-                          "commandType": "Trigger Action",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/states/resolume/processors/stopComposition",
-                                "controlAddress": "/target"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
                         "value": [
                           0.2777764797210693,
                           0.2028039246797562,
@@ -13374,7 +14900,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/jardin1TransitionDuration",
+                                "value": "/resolume/jardinTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -13386,36 +14912,7 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 0.0,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Transition duration jardin 1",
-                          "type": "Consequence",
-                          "commandModule": "customVariables",
-                          "commandPath": "",
-                          "commandType": "Set Value",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/resolume/jardin2TransitionDuration",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": "All",
-                                "controlAddress": "/component"
-                              },
-                              {
-                                "value": "Equals",
-                                "controlAddress": "/operator"
-                              },
-                              {
-                                "value": 0.0,
+                                "value": 0.1601255983114243,
                                 "controlAddress": "/value"
                               }
                             ],
@@ -13432,7 +14929,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/resolume/cours1TransitionDuration",
+                                "value": "/resolume/coursTransitionDuration",
                                 "controlAddress": "/target"
                               },
                               {
@@ -13444,36 +14941,7 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 0.0,
-                                "controlAddress": "/value"
-                              }
-                            ],
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Transition duration Cours 1",
-                          "type": "Consequence",
-                          "commandModule": "customVariables",
-                          "commandPath": "",
-                          "commandType": "Set Value",
-                          "command": {
-                            "parameters": [
-                              {
-                                "value": "/resolume/cours2TransitionDuration",
-                                "controlAddress": "/target"
-                              },
-                              {
-                                "value": "All",
-                                "controlAddress": "/component"
-                              },
-                              {
-                                "value": "Equals",
-                                "controlAddress": "/operator"
-                              },
-                              {
-                                "value": 0.0,
+                                "value": 0.1742543131113052,
                                 "controlAddress": "/value"
                               }
                             ],
@@ -13753,7 +15221,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       }
     ],
     "viewOffset": [
