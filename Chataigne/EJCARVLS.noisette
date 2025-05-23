@@ -36,7 +36,7 @@
   "dashboardManager": {
     "parameters": [
       {
-        "value": true,
+        "value": false,
         "controlAddress": "/editMode"
       },
       {
@@ -170,6 +170,96 @@
             -2
           ],
           "viewZoom": 0.2640625238418579
+        }
+      },
+      {
+        "niceName": "TV Control",
+        "type": "BaseItem",
+        "itemManager": {
+          "parameters": [
+            {
+              "value": [
+                600.0,
+                1200.0
+              ],
+              "controlAddress": "/canvasSize",
+              "enabled": true
+            }
+          ],
+          "items": [
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -150.5882415771484,
+                    -357.6470642089844
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    294.0,
+                    234.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/states/tv/processors/incIndex/trigger",
+                  "controlAddress": "/target"
+                },
+                {
+                  "value": "Next",
+                  "controlAddress": "/customText",
+                  "enabled": true
+                },
+                {
+                  "value": "",
+                  "controlAddress": "/customImage",
+                  "enabled": false
+                }
+              ],
+              "niceName": "Item",
+              "hideInEditor": true,
+              "type": "DashboardTriggerItem",
+              "ghostAddress": "/states/tv/processors/incIndex/trigger",
+              "controllable": "/states/tv/processors/incIndex/trigger"
+            },
+            {
+              "parameters": [
+                {
+                  "value": [
+                    -246.5882415771484,
+                    -451.7647094726562
+                  ],
+                  "controlAddress": "/viewUIPosition"
+                },
+                {
+                  "value": [
+                    503.0,
+                    40.0
+                  ],
+                  "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "Passer \u00e0 la prochaine page sur la t\u00e9l\u00e9",
+                  "controlAddress": "/text"
+                },
+                {
+                  "value": 32.00000381469727,
+                  "customUI": 3,
+                  "controlAddress": "/size"
+                }
+              ],
+              "niceName": "Comment",
+              "hideInEditor": true,
+              "type": "DashboardCommentItem"
+            }
+          ],
+          "viewOffset": [
+            15,
+            39
+          ],
+          "viewZoom": 0.53125
         },
         "editing": true
       }
@@ -240,7 +330,7 @@
                   "type": 0,
                   "width": 1046,
                   "height": 630,
-                  "currentContent": "State Machine",
+                  "currentContent": "Dashboard",
                   "tabs": [
                     {
                       "name": "State Machine"
@@ -389,7 +479,7 @@
         "params": {
           "parameters": [
             {
-              "value": 1.823808908462524,
+              "value": 1.851206064224243,
               "controlAddress": "/outVolume"
             }
           ],
@@ -516,7 +606,7 @@
                       "controlAddress": "/local"
                     },
                     {
-                      "value": "192.168.0.117",
+                      "value": "192.168.0.102",
                       "controlAddress": "/remoteHost"
                     },
                     {
@@ -562,7 +652,7 @@
               "controlAddress": "/mode"
             },
             {
-              "value": 20.0,
+              "value": 30.0,
               "controlAddress": "/time"
             }
           ]
@@ -850,351 +940,6 @@
           "Projector 5",
           "Projector 6"
         ]
-      },
-      {
-        "niceName": "OBS Websocket Advanced",
-        "type": "OBS Websocket Advanced",
-        "scripts": {
-          "items": [
-            {
-              "niceName": "OBSAdvanced",
-              "type": "BaseItem",
-              "scriptParams": {
-                "hideInEditor": true
-              }
-            }
-          ],
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "params": {
-          "parameters": [
-            {
-              "value": "Lines",
-              "controlAddress": "/protocol"
-            },
-            {
-              "value": false,
-              "controlAddress": "/autoAdd"
-            },
-            {
-              "value": "Space separated",
-              "controlAddress": "/messageStructure"
-            },
-            {
-              "value": "|",
-              "controlAddress": "/customSeparator"
-            },
-            {
-              "value": true,
-              "controlAddress": "/firstValueIsTheName"
-            },
-            {
-              "value": "127.0.0.1:4455",
-              "controlAddress": "/serverPath"
-            },
-            {
-              "value": true,
-              "controlAddress": "/enableAuthentification"
-            },
-            {
-              "value": "https://github.com/KopiasCsaba/Chataigne-Module-OBS-Websocket-Advanced",
-              "controlAddress": "/documentation"
-            }
-          ],
-          "containers": {
-            "pass_through": {
-            },
-            "eventSub": {
-              "parameters": [
-                {
-                  "value": true,
-                  "controlAddress": "/general"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/config"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/scenes"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/inputs"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/transitions"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/filters"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/outputs"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/sceneItems"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/mediaInputs"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/vendors"
-                },
-                {
-                  "value": true,
-                  "controlAddress": "/ui"
-                }
-              ]
-            }
-          }
-        },
-        "templates": {
-          "viewOffset": [
-            0,
-            0
-          ],
-          "viewZoom": 1.0
-        },
-        "values": {
-          "containers": {
-            "merged": {
-              "containers": {
-                "sceneCollectionList": {
-                  "containers": {
-                    "sceneCollectionsList": {
-                      "owned": true,
-                      "niceName": "sceneCollections list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "SceneCollectionList"
-                },
-                "sceneTransition": {
-                  "owned": true,
-                  "niceName": "SceneTransition"
-                },
-                "sceneTransitionDuration": {
-                  "owned": true,
-                  "niceName": "SceneTransitionDuration"
-                },
-                "studioModeState": {
-                  "owned": true,
-                  "niceName": "StudioModeState"
-                },
-                "profileList": {
-                  "containers": {
-                    "profilesList": {
-                      "owned": true,
-                      "niceName": "profiles list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "ProfileList"
-                },
-                "replayBufferSaved": {
-                  "owned": true,
-                  "niceName": "ReplayBufferSaved"
-                },
-                "previewScene": {
-                  "owned": true,
-                  "niceName": "PreviewScene"
-                },
-                "recordState": {
-                  "owned": true,
-                  "niceName": "RecordState"
-                },
-                "replayBufferState": {
-                  "owned": true,
-                  "niceName": "ReplayBufferState"
-                },
-                "programScene": {
-                  "owned": true,
-                  "niceName": "ProgramScene"
-                },
-                "sceneList": {
-                  "owned": true,
-                  "niceName": "SceneList"
-                },
-                "virtualcamState": {
-                  "owned": true,
-                  "niceName": "VirtualcamState"
-                },
-                "streamState": {
-                  "owned": true,
-                  "niceName": "StreamState"
-                }
-              },
-              "owned": true,
-              "niceName": "Merged"
-            },
-            "responses": {
-              "containers": {
-                "getSceneCollectionList": {
-                  "containers": {
-                    "sceneCollectionsList": {
-                      "owned": true,
-                      "niceName": "sceneCollections list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetSceneCollectionList"
-                },
-                "getTransitionKindList": {
-                  "containers": {
-                    "transitionKindsList": {
-                      "owned": true,
-                      "niceName": "transitionKinds list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetTransitionKindList"
-                },
-                "getVideoSettings": {
-                  "owned": true,
-                  "niceName": "GetVideoSettings"
-                },
-                "getCurrentSceneTransition": {
-                  "owned": true,
-                  "niceName": "GetCurrentSceneTransition"
-                },
-                "getCurrentSceneTransitionCursor": {
-                  "owned": true,
-                  "niceName": "GetCurrentSceneTransitionCursor"
-                },
-                "getStudioModeEnabled": {
-                  "owned": true,
-                  "niceName": "GetStudioModeEnabled"
-                },
-                "getSceneTransitionList": {
-                  "owned": true,
-                  "niceName": "GetSceneTransitionList"
-                },
-                "getMonitorList": {
-                  "owned": true,
-                  "niceName": "GetMonitorList"
-                },
-                "getSourceFilterKindList": {
-                  "containers": {
-                    "sourceFilterKindsList": {
-                      "owned": true,
-                      "niceName": "sourceFilterKinds list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetSourceFilterKindList"
-                },
-                "getProfileList": {
-                  "containers": {
-                    "profilesList": {
-                      "owned": true,
-                      "niceName": "profiles list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetProfileList"
-                },
-                "getRecordDirectory": {
-                  "owned": true,
-                  "niceName": "GetRecordDirectory"
-                },
-                "getLastReplayBufferReplay": {
-                  "owned": true,
-                  "niceName": "GetLastReplayBufferReplay"
-                },
-                "getCurrentPreviewScene": {
-                  "owned": true,
-                  "niceName": "GetCurrentPreviewScene"
-                },
-                "getRecordStatus": {
-                  "owned": true,
-                  "niceName": "GetRecordStatus"
-                },
-                "getReplayBufferStatus": {
-                  "owned": true,
-                  "niceName": "GetReplayBufferStatus"
-                },
-                "getCurrentProgramScene": {
-                  "owned": true,
-                  "niceName": "GetCurrentProgramScene"
-                },
-                "getVersion": {
-                  "containers": {
-                    "availableRequestsList": {
-                      "owned": true,
-                      "niceName": "availableRequests list"
-                    },
-                    "supportedImageFormatsList": {
-                      "owned": true,
-                      "niceName": "supportedImageFormats list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetVersion"
-                },
-                "getSpecialInputs": {
-                  "owned": true,
-                  "niceName": "GetSpecialInputs"
-                },
-                "getSceneList": {
-                  "owned": true,
-                  "niceName": "GetSceneList"
-                },
-                "getVirtualCamStatus": {
-                  "owned": true,
-                  "niceName": "GetVirtualCamStatus"
-                },
-                "getOutputList": {
-                  "owned": true,
-                  "niceName": "GetOutputList"
-                },
-                "getStreamStatus": {
-                  "owned": true,
-                  "niceName": "GetStreamStatus"
-                },
-                "getGroupList": {
-                  "containers": {
-                    "groupsList": {
-                      "owned": true,
-                      "niceName": "groups list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetGroupList"
-                },
-                "getStreamServiceSettings": {
-                  "owned": true,
-                  "niceName": "GetStreamServiceSettings"
-                },
-                "getHotkeyList": {
-                  "containers": {
-                    "hotkeysList": {
-                      "owned": true,
-                      "niceName": "hotkeys list"
-                    }
-                  },
-                  "owned": true,
-                  "niceName": "GetHotkeyList"
-                },
-                "getStats": {
-                  "owned": true,
-                  "niceName": "GetStats"
-                }
-              },
-              "owned": true,
-              "niceName": "Responses"
-            }
-          }
-        }
       },
       {
         "parameters": [
@@ -1658,7 +1403,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1701,7 +1446,7 @@
             {
               "parameters": [
                 {
-                  "value": "01:47",
+                  "value": "10:16",
                   "controlAddress": "/tvText",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1741,7 +1486,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 26.5,
                   "controlAddress": "/showCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1759,7 +1504,7 @@
             {
               "parameters": [
                 {
-                  "value": 107.8999938964844,
+                  "value": 590.0,
                   "controlAddress": "/interCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1799,7 +1544,7 @@
             {
               "parameters": [
                 {
-                  "value": "Un.e h\u00e9ro.\u00efne c'est...",
+                  "value": "Mon plus grand d\u00e9fi...",
                   "controlAddress": "/question",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1817,7 +1562,7 @@
             {
               "parameters": [
                 {
-                  "value": "\u00catre humble, humain, aider les autres au risque de sa vie. \r",
+                  "value": "J'ai travers\u00e9 et d\u00e9pass\u00e9 des p\u00e9riodes de turbulences extr\u00eames dans ma vie.  Jean-Marc",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse1",
                   "feedbackOnly": false,
@@ -1836,7 +1581,7 @@
             {
               "parameters": [
                 {
-                  "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
+                  "value": " J'ai renonc\u00e9 \u00e0 ma maison et quitt\u00e9 mon amour de jeunesse. ",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse2",
                   "feedbackOnly": false,
@@ -1855,7 +1600,7 @@
             {
               "parameters": [
                 {
-                  "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
+                  "value": "Vivre avec un handicap a \u00e9t\u00e9, est et sera le plus grand d\u00e9fi de ma vie.  Abel  ",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse3",
                   "feedbackOnly": false,
@@ -1874,7 +1619,7 @@
             {
               "parameters": [
                 {
-                  "value": "Une personne \u00e9quilibr\u00e9e, sans addictions n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
+                  "value": "Je suis sortie de la d\u00e9pression.  Salom\u00e9",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse4",
                   "feedbackOnly": false,
@@ -1915,9 +1660,9 @@
             {
               "parameters": [
                 {
-                  "value": 7,
+                  "value": 3,
                   "minValue": 1.0,
-                  "maxValue": 10.0,
+                  "maxValue": 14.0,
                   "default": 0,
                   "hexMode": false,
                   "controlAddress": "/reponseID",
@@ -1937,7 +1682,7 @@
             {
               "parameters": [
                 {
-                  "value": "Hero",
+                  "value": "Defi",
                   "enumOptions": {
                     "Defi": "0",
                     "Face": "1",
@@ -2046,7 +1791,7 @@
             {
               "parameters": [
                 {
-                  "value": 255.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 255.0,
                   "default": 0.0,
@@ -2067,7 +1812,7 @@
             {
               "parameters": [
                 {
-                  "value": 204.1601257324219,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 255.0,
                   "default": 0.0,
@@ -3092,14 +2837,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.5,
+                                "value": 0.5919988751411438,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.5,
+                              "value": 0.5919988751411438,
                               "controlAddress": "/states/resolume/processors/whiteStripesTx/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -3138,14 +2883,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.5,
+                                "value": 0.5919988751411438,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.5,
+                              "value": 0.5919988751411438,
                               "controlAddress": "/states/resolume/processors/whiteStripesTx/outputs/mappingOutput1/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -3943,7 +3688,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": false,
+            "value": true,
             "controlAddress": "/active"
           }
         ],
@@ -4163,7 +3908,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Un.e h\u00e9ro.\u00efne c'est...",
+                                    "value": "Mon plus grand d\u00e9fi...",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/question/question",
@@ -4366,7 +4111,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "\u00catre humble, humain, aider les autres au risque de sa vie. \r",
+                                    "value": "J'ai travers\u00e9 et d\u00e9pass\u00e9 des p\u00e9riodes de turbulences extr\u00eames dans ma vie.  Jean-Marc",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse1/reponse1",
@@ -4573,7 +4318,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entoure.\r",
+                                    "value": " J'ai renonc\u00e9 \u00e0 ma maison et quitt\u00e9 mon amour de jeunesse. ",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse2/reponse2",
@@ -4784,7 +4529,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
+                                    "value": "Vivre avec un handicap a \u00e9t\u00e9, est et sera le plus grand d\u00e9fi de ma vie.  Abel  ",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse3/reponse3",
@@ -4997,7 +4742,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Une personne \u00e9quilibr\u00e9e, sans addictions n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
+                                    "value": "Je suis sortie de la d\u00e9pression.  Salom\u00e9",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse4/reponse4",
@@ -5303,7 +5048,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 2,
+                                "value": 0,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5311,7 +5056,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": 2,
+                              "value": 0,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#1/#1"
                             },
@@ -5343,7 +5088,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 7,
+                                "value": 3,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5351,7 +5096,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 7,
+                              "value": 3,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#3/#1"
                             },
@@ -6546,8 +6291,8 @@
       }
     ],
     "viewOffset": [
-      -87,
-      -296
+      -93,
+      -107
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -6561,8 +6306,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        -87,
-        -296
+        -93,
+        -107
       ],
       "viewZoom": 1.0
     }
@@ -6585,11 +6330,11 @@
             "controlAddress": "/fps"
           },
           {
-            "value": 0.0,
+            "value": 515.36962890625,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 156.5426483154297,
+            "value": 611.7666625976562,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -10640,7 +10385,6 @@
                       "items": [
                         {
                           "niceName": "Consequence",
-                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -10759,7 +10503,6 @@
                         },
                         {
                           "niceName": "Consequence 1",
-                          "editorIsCollapsed": true,
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -11814,7 +11557,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       },
       {
         "parameters": [
@@ -11831,7 +11575,7 @@
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 67.44830322265625,
+            "value": 68.72537231445312,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -12227,7 +11971,13 @@
                           }
                         },
                         {
-                          "niceName": "lampadaire",
+                          "parameters": [
+                            {
+                              "value": true,
+                              "controlAddress": "/enabled"
+                            }
+                          ],
+                          "niceName": "sas",
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -12235,7 +11985,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/light/lampadaire",
+                                "value": "/light/sas",
                                 "controlAddress": "/target"
                               },
                               {
@@ -12247,11 +11997,11 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 15.0,
+                                "value": 30.0,
                                 "controlAddress": "/time"
                               },
                               {
-                                "value": 255.0,
+                                "value": 204.1601257324219,
                                 "controlAddress": "/value"
                               }
                             ],
@@ -13537,7 +13287,7 @@
                         "controlAddress": "/flagY"
                       }
                     ],
-                    "niceName": "SAS",
+                    "niceName": "lampadaire",
                     "type": "TimeTrigger",
                     "consequences": {
                       "parameters": [
@@ -13554,7 +13304,7 @@
                               "controlAddress": "/enabled"
                             }
                           ],
-                          "niceName": "sas",
+                          "niceName": "sas 1",
                           "type": "Consequence",
                           "commandModule": "customVariables",
                           "commandPath": "",
@@ -13562,7 +13312,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/light/sas",
+                                "value": "/light/lampadaire",
                                 "controlAddress": "/target"
                               },
                               {
@@ -13574,7 +13324,7 @@
                                 "controlAddress": "/operator"
                               },
                               {
-                                "value": 15.0,
+                                "value": 30.0,
                                 "controlAddress": "/time"
                               },
                               {
@@ -15221,8 +14971,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       }
     ],
     "viewOffset": [
