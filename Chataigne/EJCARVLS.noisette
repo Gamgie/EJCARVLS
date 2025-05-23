@@ -73,7 +73,7 @@
               "controlAddress": "/backgroundColor"
             },
             {
-              "value": "TV/1.jpg",
+              "value": "TV/3.jpg",
               "relative": true,
               "controlAddress": "/backgroundImage"
             },
@@ -328,9 +328,9 @@
                 },
                 {
                   "type": 0,
-                  "width": 1046,
+                  "width": 1094,
                   "height": 630,
-                  "currentContent": "Dashboard",
+                  "currentContent": "State Machine",
                   "tabs": [
                     {
                       "name": "State Machine"
@@ -348,7 +348,7 @@
                 },
                 {
                   "type": 0,
-                  "width": 555,
+                  "width": 507,
                   "height": 630,
                   "currentContent": "Inspector",
                   "tabs": [
@@ -1161,7 +1161,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 1.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1182,7 +1182,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 1.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1361,7 +1361,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.1800267994403839,
+                  "value": 0.4827586114406586,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1382,7 +1382,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.2198335826396942,
+                  "value": 0.4827586114406586,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1403,7 +1403,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 1.0,
                   "minValue": 0,
                   "maxValue": 1,
                   "default": 0.0,
@@ -1446,7 +1446,7 @@
             {
               "parameters": [
                 {
-                  "value": "10:16",
+                  "value": "15:11",
                   "controlAddress": "/tvText",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1464,7 +1464,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 3,
                   "minValue": 1.0,
                   "maxValue": 4.0,
                   "default": 0,
@@ -1486,7 +1486,7 @@
             {
               "parameters": [
                 {
-                  "value": 26.5,
+                  "value": 611.7666625976562,
                   "controlAddress": "/showCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1504,7 +1504,7 @@
             {
               "parameters": [
                 {
-                  "value": 590.0,
+                  "value": 300.0,
                   "controlAddress": "/interCountdown",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1544,7 +1544,7 @@
             {
               "parameters": [
                 {
-                  "value": "Mon plus grand d\u00e9fi...",
+                  "value": "Un.e h\u00e9ro.\u00efne c'est...",
                   "controlAddress": "/question",
                   "feedbackOnly": false,
                   "type": "String",
@@ -1562,7 +1562,7 @@
             {
               "parameters": [
                 {
-                  "value": "J'ai travers\u00e9 et d\u00e9pass\u00e9 des p\u00e9riodes de turbulences extr\u00eames dans ma vie.  Jean-Marc",
+                  "value": "C'est quelqu'un qui incarne des valeurs, qui aide \u00e0 tenir debout et qui inspire. \u00c7a peut aussi \u00eatre soi-m\u00eame, en combattant ce que personne d'autre ne voit. Salom\u00e9\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse1",
                   "feedbackOnly": false,
@@ -1581,7 +1581,7 @@
             {
               "parameters": [
                 {
-                  "value": " J'ai renonc\u00e9 \u00e0 ma maison et quitt\u00e9 mon amour de jeunesse. ",
+                  "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entourent.\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse2",
                   "feedbackOnly": false,
@@ -1600,7 +1600,7 @@
             {
               "parameters": [
                 {
-                  "value": "Vivre avec un handicap a \u00e9t\u00e9, est et sera le plus grand d\u00e9fi de ma vie.  Abel  ",
+                  "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse3",
                   "feedbackOnly": false,
@@ -1619,7 +1619,7 @@
             {
               "parameters": [
                 {
-                  "value": "Je suis sortie de la d\u00e9pression.  Salom\u00e9",
+                  "value": "Une personne \u00e9quilibr\u00e9e, sans addiction n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 et une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
                   "alwaysNotify": true,
                   "controlAddress": "/reponse4",
                   "feedbackOnly": false,
@@ -1638,7 +1638,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 4,
                   "minValue": 1.0,
                   "maxValue": 4.0,
                   "default": 0,
@@ -1660,7 +1660,7 @@
             {
               "parameters": [
                 {
-                  "value": 3,
+                  "value": 6,
                   "minValue": 1.0,
                   "maxValue": 14.0,
                   "default": 0,
@@ -1682,7 +1682,7 @@
             {
               "parameters": [
                 {
-                  "value": "Defi",
+                  "value": "Hero",
                   "enumOptions": {
                     "Defi": "0",
                     "Face": "1",
@@ -1749,7 +1749,7 @@
             {
               "parameters": [
                 {
-                  "value": 255.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 255.0,
                   "default": 0.0,
@@ -1770,7 +1770,7 @@
             {
               "parameters": [
                 {
-                  "value": 255.0,
+                  "value": 0.0,
                   "minValue": 0.0,
                   "maxValue": 255.0,
                   "default": 0.0,
@@ -1951,14 +1951,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.0,
+                                "value": 1.0,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.0,
+                              "value": 1.0,
                               "controlAddress": "/states/resolume/processors/j_arriveOpacity/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2047,14 +2047,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.0,
+                                "value": 1.0,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.0,
+                              "value": 1.0,
                               "controlAddress": "/states/resolume/processors/voyageOpacity/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2331,14 +2331,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.1800267994403839,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.1800267994403839,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2375,14 +2375,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.1800267994403839,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.1800267994403839,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput1/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2419,14 +2419,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.1800267994403839,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.1800267994403839,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/jardin1TransitionDuration/outputs/mappingOutput2/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2515,14 +2515,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.2198335826396942,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.2198335826396942,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2561,14 +2561,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.2198335826396942,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.2198335826396942,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput1/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2607,14 +2607,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.2198335826396942,
+                                "value": 0.4827586114406586,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.2198335826396942,
+                              "value": 0.4827586114406586,
                               "controlAddress": "/states/resolume/processors/cours1TransitionDuration/outputs/mappingOutput2/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2837,14 +2837,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.5919988751411438,
+                                "value": 0.5,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.5919988751411438,
+                              "value": 0.5,
                               "controlAddress": "/states/resolume/processors/whiteStripesTx/outputs/mappingOutput/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -2883,14 +2883,14 @@
                           {
                             "parameters": [
                               {
-                                "value": 0.5919988751411438,
+                                "value": 0.5,
                                 "controlAddress": "/#1"
                               }
                             ],
                             "niceName": "#1",
                             "type": "Float",
                             "param": {
-                              "value": 0.5919988751411438,
+                              "value": 0.5,
                               "controlAddress": "/states/resolume/processors/whiteStripesTx/outputs/mappingOutput1/command/arguments/#1/#1"
                             },
                             "paramLink": {
@@ -3688,7 +3688,7 @@
             "controlAddress": "/viewUISize"
           },
           {
-            "value": true,
+            "value": false,
             "controlAddress": "/active"
           }
         ],
@@ -3908,7 +3908,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Mon plus grand d\u00e9fi...",
+                                    "value": "Un.e h\u00e9ro.\u00efne c'est...",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/question/question",
@@ -4111,7 +4111,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "J'ai travers\u00e9 et d\u00e9pass\u00e9 des p\u00e9riodes de turbulences extr\u00eames dans ma vie.  Jean-Marc",
+                                    "value": "C'est quelqu'un qui incarne des valeurs, qui aide \u00e0 tenir debout et qui inspire. \u00c7a peut aussi \u00eatre soi-m\u00eame, en combattant ce que personne d'autre ne voit. Salom\u00e9\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse1/reponse1",
@@ -4318,7 +4318,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": " J'ai renonc\u00e9 \u00e0 ma maison et quitt\u00e9 mon amour de jeunesse. ",
+                                    "value": "Pour moi, c'est une personne pleine d'empathie qui se soucie du monde et des personnes qui l\u2019entourent.\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse2/reponse2",
@@ -4529,7 +4529,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Vivre avec un handicap a \u00e9t\u00e9, est et sera le plus grand d\u00e9fi de ma vie.  Abel  ",
+                                    "value": "Une personne altruiste qui tend toujours la main aux autres sans attendre en retour et qui fait passer l'int\u00e9r\u00eat collectif avant le sien.  Gauthier\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse3/reponse3",
@@ -4742,7 +4742,7 @@
                               "arguments": {
                                 "parameters": [
                                   {
-                                    "value": "Je suis sortie de la d\u00e9pression.  Salom\u00e9",
+                                    "value": "Une personne \u00e9quilibr\u00e9e, sans addiction n\u00e9gative, avec un bon c\u0153ur, une sinc\u00e9rit\u00e9 et une honn\u00eatet\u00e9 dans cette \u00e9poque d\u2019apparence. \u00c7a, c\u2019est pour moi un h\u00e9ros. Abel\r",
                                     "controlMode": 2,
                                     "reference": {
                                       "value": "/customVariables/interperf/variables/reponse4/reponse4",
@@ -5048,7 +5048,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 0,
+                                "value": 2,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5056,7 +5056,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": 0,
+                              "value": 2,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#1/#1"
                             },
@@ -5068,7 +5068,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 1,
+                                "value": 4,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5076,7 +5076,7 @@
                             "niceName": "#2",
                             "type": "Integer",
                             "param": {
-                              "value": 1,
+                              "value": 4,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#2/#1"
                             },
@@ -5088,7 +5088,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 3,
+                                "value": 6,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -5096,7 +5096,7 @@
                             "niceName": "#3",
                             "type": "Integer",
                             "param": {
-                              "value": 3,
+                              "value": 6,
                               "hexMode": false,
                               "controlAddress": "/states/interperf/processors/setResponse/outputs/mappingOutput/command/arguments/#3/#1"
                             },
@@ -6292,7 +6292,7 @@
     ],
     "viewOffset": [
       -93,
-      -107
+      -259
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -6307,7 +6307,7 @@
       "hideInEditor": true,
       "viewOffset": [
         -93,
-        -107
+        -259
       ],
       "viewZoom": 1.0
     }
@@ -6330,11 +6330,11 @@
             "controlAddress": "/fps"
           },
           {
-            "value": 515.36962890625,
+            "value": 0.0,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 611.7666625976562,
+            "value": 37.77281951904297,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -6904,7 +6904,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/composition/layers/2/video/opacity",
+                                "value": "/composition/layers/1/video/opacity",
                                 "controlAddress": "/address"
                               }
                             ],
@@ -6996,7 +6996,7 @@
                           "command": {
                             "parameters": [
                               {
-                                "value": "/composition/layers/1/video/opacity",
+                                "value": "/composition/layers/3/video/opacity",
                                 "controlAddress": "/address"
                               }
                             ],
@@ -11567,15 +11567,15 @@
             "controlAddress": "/enabled"
           },
           {
-            "value": 590.0,
+            "value": 300.0,
             "controlAddress": "/totalTime"
           },
           {
-            "value": 0.0,
+            "value": 208.9856872558594,
             "controlAddress": "/viewStartTime"
           },
           {
-            "value": 68.72537231445312,
+            "value": 300.0,
             "controlAddress": "/viewEndTime"
           },
           {
@@ -11613,7 +11613,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -11717,7 +11717,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -11775,7 +11775,7 @@
                         "controlAddress": "/enabled"
                       },
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -11819,6 +11819,78 @@
                                 "controlAddress": "/target"
                               }
                             ],
+                            "paramLinks": {
+                            }
+                          }
+                        }
+                      ],
+                      "viewOffset": [
+                        0,
+                        0
+                      ],
+                      "viewZoom": 1.0
+                    }
+                  },
+                  {
+                    "parameters": [
+                      {
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": [
+                          0.2777764797210693,
+                          0.0,
+                          0.0,
+                          1.0
+                        ],
+                        "controlAddress": "/color"
+                      },
+                      {
+                        "value": 0.0,
+                        "controlAddress": "/time"
+                      },
+                      {
+                        "value": 0.1496973037719727,
+                        "controlAddress": "/flagY"
+                      }
+                    ],
+                    "niceName": "Launch Audiodescription",
+                    "type": "TimeTrigger",
+                    "consequences": {
+                      "parameters": [
+                        {
+                          "value": 0.0,
+                          "controlAddress": "/delay"
+                        },
+                        {
+                          "value": 1.0,
+                          "controlAddress": "/stagger"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/cancelDelaysOnTrigger"
+                        }
+                      ],
+                      "items": [
+                        {
+                          "niceName": "Consequence 1",
+                          "type": "Consequence",
+                          "commandModule": "vlc",
+                          "commandPath": "",
+                          "commandType": "Stop",
+                          "command": {
+                            "paramLinks": {
+                            }
+                          }
+                        },
+                        {
+                          "niceName": "Consequence",
+                          "type": "Consequence",
+                          "commandModule": "vlc",
+                          "commandPath": "",
+                          "commandType": "Play",
+                          "command": {
                             "paramLinks": {
                             }
                           }
@@ -12105,7 +12177,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -12335,7 +12407,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -12484,7 +12556,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 10.0600004196167,
+                        "value": 20.0,
                         "controlAddress": "/time"
                       },
                       {
@@ -12632,7 +12704,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -12762,7 +12834,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -12812,15 +12884,15 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 192.7800140380859,
+                        "value": 94.28001403808594,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7504127621650696,
+                        "value": 0.8373692631721497,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -12878,11 +12950,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 246.4199829101562,
+                        "value": 103.8199920654297,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.6777655482292175,
+                        "value": 0.6125481724739075,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13075,7 +13147,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -13088,7 +13160,7 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 248.6200103759766,
+                        "value": 106.02001953125,
                         "controlAddress": "/time"
                       },
                       {
@@ -13207,83 +13279,11 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
-                        "controlAddress": "/locked"
-                      },
-                      {
-                        "value": [
-                          0.2777764797210693,
-                          0.0,
-                          0.0,
-                          1.0
-                        ],
-                        "controlAddress": "/color"
-                      },
-                      {
-                        "value": 289.0,
+                        "value": 119.2000045776367,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.3670886158943176,
-                        "controlAddress": "/flagY"
-                      }
-                    ],
-                    "niceName": "Launch Audiodescription",
-                    "type": "TimeTrigger",
-                    "consequences": {
-                      "parameters": [
-                        {
-                          "value": 0.0,
-                          "controlAddress": "/delay"
-                        },
-                        {
-                          "value": 1.0,
-                          "controlAddress": "/stagger"
-                        },
-                        {
-                          "value": false,
-                          "controlAddress": "/cancelDelaysOnTrigger"
-                        }
-                      ],
-                      "items": [
-                        {
-                          "niceName": "Consequence 1",
-                          "type": "Consequence",
-                          "commandModule": "vlc",
-                          "commandPath": "",
-                          "commandType": "Stop",
-                          "command": {
-                            "paramLinks": {
-                            }
-                          }
-                        },
-                        {
-                          "niceName": "Consequence",
-                          "type": "Consequence",
-                          "commandModule": "vlc",
-                          "commandPath": "",
-                          "commandType": "Play",
-                          "command": {
-                            "paramLinks": {
-                            }
-                          }
-                        }
-                      ],
-                      "viewOffset": [
-                        0,
-                        0
-                      ],
-                      "viewZoom": 1.0
-                    }
-                  },
-                  {
-                    "parameters": [
-                      {
-                        "value": 301.8200073242188,
-                        "controlAddress": "/time"
-                      },
-                      {
-                        "value": 0.4867914021015167,
+                        "value": 0.3346174955368042,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13432,15 +13432,15 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 384.0599670410156,
+                        "value": 175.1599731445312,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.2381282448768616,
+                        "value": 0.187403604388237,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13496,11 +13496,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 400.0599975585938,
+                        "value": 191.1600036621094,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7357365489006042,
+                        "value": 0.6850119233131409,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13693,7 +13693,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -13706,11 +13706,11 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 402.3599853515625,
+                        "value": 193.4599914550781,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.02898550778627396,
+                        "value": 0.02173913083970547,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13827,15 +13827,15 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 513.2999877929688,
+                        "value": 256.0399780273438,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.6996881365776062,
+                        "value": 0.5475142002105713,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13893,11 +13893,11 @@
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 580.1400146484375,
+                        "value": 288.3000183105469,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.0,
+                        "value": 0.04347825795412064,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -13943,11 +13943,11 @@
                   {
                     "parameters": [
                       {
-                        "value": 581.2999877929688,
+                        "value": 289.4599914550781,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.47826087474823,
+                        "value": 0.52173912525177,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -14326,15 +14326,15 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 586.0599365234375,
+                        "value": 294.2199401855469,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.8734177350997925,
+                        "value": 0.9168959856033325,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -14389,11 +14389,11 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 586.52001953125,
+                        "value": 294.6800231933594,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.1109888106584549,
+                        "value": 0.1544670760631561,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -14606,7 +14606,7 @@
                   {
                     "parameters": [
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
@@ -14619,11 +14619,11 @@
                         "controlAddress": "/color"
                       },
                       {
-                        "value": 590.0,
+                        "value": 298.1600036621094,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.2645477056503296,
+                        "value": 0.3080259561538696,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -14714,15 +14714,15 @@
                         "controlAddress": "/enabled"
                       },
                       {
-                        "value": true,
+                        "value": false,
                         "controlAddress": "/locked"
                       },
                       {
-                        "value": 590.0,
+                        "value": 298.1600036621094,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.7413042783737183,
+                        "value": 0.7847825288772583,
                         "controlAddress": "/flagY"
                       }
                     ],
@@ -14805,11 +14805,15 @@
                   {
                     "parameters": [
                       {
-                        "value": 580.739990234375,
+                        "value": false,
+                        "controlAddress": "/locked"
+                      },
+                      {
+                        "value": 298.7000122070312,
                         "controlAddress": "/time"
                       },
                       {
-                        "value": 0.449999988079071,
+                        "value": 0.3999999761581421,
                         "controlAddress": "/flagY"
                       }
                     ],

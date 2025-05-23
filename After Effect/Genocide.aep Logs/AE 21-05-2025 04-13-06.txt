@@ -1,7 +1,0 @@
-Adobe After Effects v25.1 Windows 64 render log for project “Genocide.aep”
-
-Rendering started on 21/05/2025 at 04:13:06
-
-  21/05/2025 04:13:06: Starting composition “GenoResiste Jar”.
-
-  Output To: D:\Gamgie\Projects\Ultreia\Regarder le soleil\Github\EJCARVLS\Videos\Partie 3\GenoResiste Jar v5.mov  
